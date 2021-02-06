@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="style-2.css">
+	<link rel="shortcut icon" href="logo.svg" type="image/x-icon">
+	<title>OCC - Grid System</title>
+</head>
+<body>
+	<div class="container">
+		<div class="container-item row">
+			<h1 class="title_site">
+				Grid System por O código Cris
+			</h1>
+		</div>
+	</div>
+	<div class="container container-principal grid grid-tc-10">
+		<div class="menu-lateral grid-col-1-3">
+			<ul>
+				<li><a href="#grid-system">Grid System</a></li>
+				<li><a href="#grid-layout">Grid Layout</a></li>
+				<li><a href="#flexbox">Flex Box Layout</a></li>
+			</ul>
+		</div>
+		<div class="container_grid_system grid-col-3-11">
+			<!-- ----------------------------
+					GRID 10 COLUMNS
+			------------------------------ -->
+			<div id="grid-system" class="grid-item">
+				<h3>Grid system max 10 Columns</h3>
+				<h4>01 Column</h4>
+				<div class="row container-item">
+					<div class="col item col-1">Col-1</div>
+				</div>
+				<h4>02 Columns</h4>
+				<div class="row container-item">
+					<div class="col col-2 item">col-2 </div>
+					<div class="col col-2  item">col-2 </div>
+				</div>
+				<h4>03 Columns</h4>
+				<div class="row container-item">
+					<div class="col col-3 item">col-3 </div>
+					<div class="col col-3  item">col-3 </div>
+					<div class="col col-3  item">col-3 </div>
+				</div>
+				<h4>04 Columns</h4>
+				<div class="row container-item">
+					<div class="col col-4 item">col-4 </div>
+					<div class="col col-4  item">col-4 </div>
+					<div class="col col-4  item">col-4 </div>
+					<div class="col col-4  item">col-4 </div>
+				</div>
+				<h4>05 Columns</h4>
+				<div class="row container-item">
+					<div class="col col-5 item">col-5 </div>
+					<div class="col col-5  item">col-5 </div>
+					<div class="col col-5  item">col-5 </div>
+					<div class="col col-5  item">col-5 </div>
+					<div class="col col-5  item">col-5 </div>
+				</div>
+				<h4>06 Columns</h4>
+				<div class="row container-item">
+					<div class="col col-6  item">col-6 </div>
+					<div class="col col-6  item">col-6 </div>
+					<div class="col col-6  item">col-6 </div>
+					<div class="col col-6  item">col-6 </div>
+					<div class="col col-6  item">col-6 </div>
+					<div class="col col-6  item">col-6 </div>
+				</div>
+				<h4>07 Columns</h4>
+				<div class="row container-item">
+					<div class="col col-7  item">col-7 </div>
+					<div class="col col-7  item">col-7 </div>
+					<div class="col col-7  item">col-7 </div>
+					<div class="col col-7  item">col-7 </div>
+					<div class="col col-7  item">col-7 </div>
+					<div class="col col-7  item">col-7 </div>
+					<div class="col col-7  item">col-7 </div>
+				</div>
+				<h4>08 Columns</h4>
+				<div class="row container-item">
+					<div class="col col-8  item">col-8 </div>
+					<div class="col col-8  item">col-8 </div>
+					<div class="col col-8  item">col-8 </div>
+					<div class="col col-8  item">col-8 </div>
+					<div class="col col-8  item">col-8 </div>
+					<div class="col col-8  item">col-8 </div>
+					<div class="col col-8  item">col-8 </div>
+					<div class="col col-8  item">col-8 </div>
+				</div>
+				<h4>09 Columns</h4>
+				<div class="row container-item">
+					<div class="col col-9  item">col-9 </div>
+					<div class="col col-9  item">col-9 </div>
+					<div class="col col-9  item">col-9 </div>
+					<div class="col col-9  item">col-9 </div>
+					<div class="col col-9  item">col-9 </div>
+					<div class="col col-9  item">col-9 </div>
+					<div class="col col-9  item">col-9 </div>
+					<div class="col col-9  item">col-9 </div>
+					<div class="col col-9  item">col-9 </div>
+				</div>
+				<h4>10 Columns</h4>
+				<div class="row container-item">
+					<div class="col col-10  item">col-10 </div>
+					<div class="col col-10  item">col-10 </div>
+					<div class="col col-10  item">col-10 </div>
+					<div class="col col-10  item">col-10 </div>
+					<div class="col col-10  item">col-10 </div>
+					<div class="col col-10  item">col-10 </div>
+					<div class="col col-10  item">col-10 </div>
+					<div class="col col-10  item">col-10 </div>
+					<div class="col col-10  item">col-10 </div>
+					<div class="col col-10  item">col-10 </div>
+				</div>
+				<h4>3 Columns </h4>
+				<div class="row container-item">
+					<div class="col col-4  item">col-4 </div>
+					<div class="col col-4  item">col-4</div>
+					<div class="col col-2  item">col-2</div>
+				</div>
+			</div>
+			
+			<!-- ----------------------------
+					GRID LAYOUT 10 COLUMNS
+			------------------------------ -->
+			<div id="grid-layout" class="grid-item">
+				<h3>Display Grid with max 10 columns and 10 rows</h3>
+				<ul class="ml-2">
+					<li>Maximo de 10 colunas com o mesmo tamanho</li>
+					<li>Maximo de 10 linhas com o mesmo tamanho</li>
+					<li>Ordene as linhas e colunas como achar melhor</li>
+				</ul>
+				<h4>10 Columns</h4>
+				<h6><span class="code"> [ grid-tc-10 ]</span></h6>
+				<ol class="ml-2">
+					<li>
+						<div class="row container-item grid-tc-1 grid-tc-sm-2 grid-tc-md-5 grid-tc-lg-10 grid-tr-auto  grid" >
+							<div class="item-grid">Item 1</div>
+							<div class="item-grid">Item 2</div>
+							<div class="item-grid">Item 3</div>
+							<div class="item-grid">Item 4</div>
+							<div class="item-grid">Item 5</div>
+							<div class="item-grid">Item 6</div>
+							<div class="item-grid">Item 7</div>
+							<div class="item-grid">Item 8</div>
+							<div class="item-grid">Item 9</div>
+							<div class="item-grid">Item 10</div>
+						</div>
+					</li>
+					<li>
+						<div class="container-item row grid grid-tc-5 grid-tr-1">
+							<div class="item-grid grid-col-1-3">grid-col-1-3</div>
+							<div class="item-grid grid-col-3-6">grid-col-3-6</div>
+						</div>
+					</li>
+					<li>
+						<div class="row container-item grid grid-tc-10 grid-tr-1">
+							<div class="item-grid grid-col-1-3">grid-col-1-3</div>
+							<div class="item-grid grid-col-3-7">grid-col-3-7</div>
+							<div class="item-grid grid-col-7-11">grid-col-7-11</div>
+						</div>
+					</li>
+					<li>
+						<div class="row container-item grid grid-tc-10 grid-tr-1">
+							<div class="item-grid grid-col-1-6">grid-col-1-6</div>
+							<div class="item-grid grid-col-6-11">grid-col-1-6</div>
+						</div>
+					</li>
+					<li>
+						<div class="row container-item grid grid-tc-10 grid-tr-1">
+							<div class="item-grid grid-col-1-3">grid-col-1-3</div>
+							<div class="item-grid grid-col-3-5">grid-col-3-5</div>
+							<div class="item-grid grid-col-5-7">grid-col-5-7</div>
+							<div class="item-grid grid-col-7-9">grid-col-7-9</div>
+							<div class="item-grid grid-col-9-11">grid-col-7-9</div>
+						</div>
+					</li>
+				</ol>
+				<h4>10 Rows</h4>
+				<h6><span class="code"> [ grid grid-tc-5 grid-tr-10 ]</span></h6>
+				<ol class="grid grid-tc-10 grid-tr-10 w-9 mx-auto">
+					<li class="grid grid-tc-5 grid-tr-1 grid-col-2-11 grid-row-1">
+						<div class="grid-row-1 center flex grid-col-1">1</div>
+						<div class="grid-row-1 center flex grid-col-2">2</div>
+						<div class="grid-row-1 center flex grid-col-3">3</div>
+						<div class="grid-row-1 center flex grid-col-4">4</div>
+						<div class="grid-row-1 center flex grid-col-5">5</div>
+					</li>
+					<li class="grid grid-tr-10 grid-tc-1 grid-col-1 grid-row-2-11">
+						<div class="grid-row-1 center flex grid-col-1">1</div>
+						<div class="grid-row-2 center flex grid-col-1">2</div>
+						<div class="grid-row-3 center flex grid-col-1">3</div>
+						<div class="grid-row-4 center flex grid-col-1">4</div>
+						<div class="grid-row-5 center flex grid-col-1">5</div>
+						<div class="grid-row-6 center flex grid-col-1">6</div>
+						<div class="grid-row-7 center flex grid-col-1">7</div>
+						<div class="grid-row-8 center flex grid-col-1">8</div>
+						<div class="grid-row-9 center flex grid-col-1">9</div>
+						<div class="grid-row-10 center flex grid-col-1">10</div>
+					</li>
+					<li class="container-item row grid grid-tc-5 grid-tr-10 grid-col-2-11 grid-row-2-11">
+						<div class="item-grid grid-row-1 flex center dir-col grid-col-1"><p>grid-col-1</p><p> grid-row-1</p></div>
+						<div class="item-grid grid-row-2 flex center dir-col grid-col-1"><p>grid-col-1</p><p> grid-row-2</p></div>
+						<div class="item-grid grid-row-3 flex center dir-col grid-col-1"><p>grid-col-1</p><p> grid-row-3</p></div>
+						<div class="item-grid grid-row-4 flex center dir-col grid-col-1"><p>grid-col-1</p><p> grid-row-4</p></div>
+						<div class="item-grid grid-row-5 flex center dir-col grid-col-1"><p>grid-col-1</p><p> grid-row-5</p></div>
+						<div class="item-grid grid-row-6 flex center dir-col grid-col-1"><p>grid-col-1</p><p> grid-row-6</p></div>
+						<div class="item-grid grid-row-7 flex center dir-col grid-col-1"><p>grid-col-1</p><p> grid-row-7</p></div>
+						<div class="item-grid grid-row-8 flex center dir-col grid-col-1"><p>grid-col-1</p><p> grid-row-8</p></div>
+						<div class="item-grid grid-row-9 flex center dir-col grid-col-1"><p>grid-col-1</p><p> grid-row-9</p></div>
+						<div class="item-grid grid-row-10 flex center dir-col grid-col-1"><p>grid-col-1</p><p> grid-row-10</div>
+						<div class="item-grid grid-row-1-5  flex center dir-col grid-col-2"><p>grid-row-1-5</p><p>grid-col-2</p></div>
+						<div class="item-grid grid-row-5-11 flex center dir-col  grid-col-2"><p>grid-row-5-11</p><p>grid-col-2</p></div>
+						<div class="item-grid grid-row-1-4  flex center dir-col grid-col-3"><p>grid-row-1-4</p><p>grid-col-3</p></div>
+						<div class="item-grid grid-row-4-7  flex center dir-col grid-col-3"><p>grid-row-4-7</p><p>grid-col-3</p></div>
+						<div class="item-grid grid-row-7-11  flex center dir-col grid-col-3"><p>grid-row-7-11</p><p>grid-col-3</p></div>
+						<div class="item-grid grid-row-1-3  flex center dir-col grid-col-4"><p>grid-row-1-3</p><p>grid-col-4</p></div>
+						<div class="item-grid grid-row-3-6  flex center dir-col grid-col-4"><p>grid-row-3-6</p><p>grid-col-4</p></div>
+						<div class="item-grid grid-row-6-8  flex center dir-col grid-col-4"><p>grid-row-6-8</p><p>grid-col-4</p></div>
+						<div class="item-grid grid-row-8-11  flex center dir-col grid-col-4"><p>grid-row-8-11</p><p>grid-col-4</p></div>
+						<div class="item-grid grid-row-1-3  flex center dir-col grid-col-5"><p>grid-row-1-3</p><p>grid-col-5</p></div>
+						<div class="item-grid grid-row-3-5  flex center dir-col grid-col-5"><p>grid-row-3-5</p><p>grid-col-5</p></div>
+						<div class="item-grid grid-row-5-7  flex center dir-col grid-col-5"><p>grid-row-5-7</p>grid-col-5<p></p></div>
+						<div class="item-grid grid-row-7-9  flex center dir-col grid-col-5"><p>grid-row-7-9</p><p>grid-col-5</p></div>
+						<div class="item-grid grid-row-9-11  flex center dir-col grid-col-5"><p>grid-row-9-11</p><p>grid-col-5</p></div>
+					</li>
+				</ol>
+				<div class="row container-item">
+					<div class="alert-1">
+						<p>Nada impede de você usar configurações especificas no seu css, eliminando as classes grid-tc-[N] e grid-tr-[N] do seu elemento principal. E adcionar configurações especificas em cada item, também eliminando as classes grid-col-[N] e grid-row-[N] de cada item, adcionando sua classe própria em cada elemento ou item.</p>
+					</div>
+					<h2>Exemplos de uso</h2>
+					<div>
+						<p>.my-elemento{</p>
+							<p class="ml-3">grid-template-columns:250px 1fr 250px;</p>
+		   					<p class="ml-3">grid-template-rows:200px 250px;</p>
+						<p>}</p>
+					</div>
+					<div>
+						<p>.my-item-1{</p>
+							<p class="ml-3">grid-column:1;</p>
+		   					<p class="ml-3">grid-row:1/3;</p>
+
+						<p>}</p>
+					</div>
+					<div>
+						<p>.my-item-2{</p>
+							<p class="ml-3">grid-column:2;</p>
+							<p class="ml-3">grid-row:1;</p>
+						<p>}</p>
+					</div>
+					<div>
+						<p>.my-item-3{</p>
+							<p class="ml-3">grid-column:2;</p>
+							<p class="ml-3">grid-row:2;</p>
+						<p>}</p>
+					</div>
+					<div>
+						<p>.my-item-4{</p>
+							<p class="ml-3">grid-column:3;</p>
+							<p class="ml-3">grid-row:1/3;</p>
+						<p>}</p>
+					</div>
+					<h6><span class="code"> [ grid my-elemento ]</span></h6>
+					<div class="grid elemento-my my-elemento">
+						<div class=" flex dir-col pl-1 pr-1 j-center my-item my-item-1">
+							<p><span class="code"> [ my-item-1 ]</span></p>
+						</div>
+						<div class=" flex dir-col pl-1 pr-1 j-center my-item my-item-2">
+							<p><span class="code"> [ my-item-2 ]</span></p>
+						</div>
+						<div class=" flex dir-col pl-1 pr-1 j-center my-item my-item-3">
+							<p><span class="code"> [ my-item-3 ]</span></p>
+						</div>
+						<div class=" flex dir-col pl-1 pr-1 j-center my-item my-item-4">
+							<p><span class="code"> [ my-item-4 ]</span></p>
+						</div>
+					</div>
+
+				</div>
+			</div>
+			<!-- ----------------------------
+					GRID LAYOUT 10 COLUMNS
+			------------------------------ -->
+			<div id="flexbox" class="container-item" >
+				<h2>Flex Box Layout</h2>
+				<div class="alert-2">
+					<p>Display flex te permite usar quantas colunas achar melhor, basta usar as configurações adequadas.</p>
+				</div>
+				<ol>
+					<li>
+						<h6>Display Flex</h6>
+						<p class="title-item_flex">display:flex;</p>
+						<p><span class="code"> [ flex ]</span></p>
+						<div class="flex-items flex">
+							<div class="item-flex">item-1</div>
+							<div class="item-flex">item-2</div>
+							<div class="item-3 item-flex">item-3</div>
+							<div class="item-4 item-flex">item-4</div>
+							<div class="item-5 item-flex">item-6</div>
+							<div class="item-5 item-flex">item-7</div>
+							<div class="item-5 item-flex">item-8</div>
+						</div>
+					</li>
+					<li>
+						<h6>Permita a quebra de linha, caso for necessario </h6>
+						<p class="title-item_flex">flex-wrap:wrap;</p>
+						<p><span class="code"> [ flex wrap ]</span></p>
+						<div class="flex-items flex wrap">
+							<div class="item-flex">item-1</div>
+							<div class="item-flex">item-2</div>
+							<div class="item-flex">item-3</div>
+							<div class="item-flex">item-4</div>
+							<div class="item-flex">item-6</div>
+							<div class="item-flex">item-7</div>
+							<div class="item-flex">item-8</div>
+							<div class="item-flex">item-9</div>
+							<div class="item-flex">item-10</div>
+							<div class="item-flex">item-11</div>
+							<div class="item-flex">item-12</div>
+							<div class="item-flex">item-13</div>
+						</div>
+					</li>
+					<li>
+						<h6>Sem quebra de linha</h6>
+						<p class="title-item_flex">flex-wrap:nowrap;</p>
+						<p><span class="code"> [ flex nowrap ]</span></p>
+						<div class="flex-items flex nowrap w-10" style="overflow-x:scroll;">
+							<div class="item-flex">item-1</div>
+							<div class="item-flex">item-2</div>
+							<div class="item-flex">item-3</div>
+							<div class="item-flex">item-4</div>
+							<div class="item-flex">item-6</div>
+							<div class="item-flex">item-7</div>
+							<div class="item-flex">item-8</div>
+							<div class="item-flex">item-9</div>
+							<div class="item-flex">item-10</div>
+							<div class="item-flex">item-11</div>
+							<div class="item-flex">item-12</div>
+							<div class="item-flex">item-13</div>
+						</div>
+					</li>
+					<h4>Alinhamento dos Items</h4>
+					<p class="title-item_flex">justify-content:center;</p>
+					<li>
+						<h6>Alinhando ao centro horizontalmente</h6>
+						<p><span class="code"> [ flex j-center ]</span></p>
+						<div class="flex-items flex j-center">
+							<div class="item-flex">item-1</div>
+							<div class="item-flex">item-2</div>
+							<div class="item-flex">item-3</div>
+							<div class="item-flex">item-4</div>
+							<div class="item-flex">item-6</div>
+							<div class="item-flex">item-7</div>
+						</div>
+					</li>
+					<li>
+						<h6>Alinhando ao inicio horizontalmente</h6>
+						<p class="title-item_flex">justify-content:flex-start;</p>
+						<p><span class="code"> [ flex j-start ]</span></p>
+						<div class="flex-items flex j-start">
+							<div class="item-flex">item-1</div>
+							<div class="item-flex">item-2</div>
+							<div class="item-flex">item-3</div>
+							<div class="item-flex">item-4</div>
+							<div class="item-flex">item-6</div>
+							<div class="item-flex">item-7</div>
+						</div>
+					</li>
+					<li>
+						<h6>Alinhando ao fim horizontalmente</h6>
+						<p class="title-item_flex">justify-content:flex-end;</p>
+						<p><span class="code"> [ flex j-end ]</span></p>
+						<div class="flex-items flex j-end">
+							<div class="item-flex">item-1</div>
+							<div class="item-flex">item-2</div>
+							<div class="item-flex">item-3</div>
+							<div class="item-flex">item-4</div>
+							<div class="item-flex">item-6</div>
+							<div class="item-flex">item-7</div>
+						</div>
+					</li>
+					<li>
+						<h6>Alinhando distribuido completamente  horizontalmente</h6>
+						<p class="title-item_flex">justify-content:space-between;</p>
+						<p><span class="code"> [ flex j-between ]</span></p>
+						<div class="flex-items w-10 flex j-between">
+							<div class="item-flex">item-1</div>
+							<div class="item-flex">item-2</div>
+							<div class="item-flex">item-3</div>
+							<div class="item-flex">item-4</div>
+						</div>
+					</li>
+					<li>
+						<h6>Alinhando distribuido  horizontalmente</h6>
+						<p class="title-item_flex">justify-content:space-around;</p>
+						<p><span class="code"> [ flex j-around ]</span></p>
+						<div class="flex-items flex j-around">
+							<div class="item-flex">item-1</div>
+							<div class="item-flex">item-2</div>
+							<div class="item-flex">item-3</div>
+							<div class="item-flex">item-4</div>
+						</div>
+					</li>
+					<li>
+						<h6>Alinhando ao centro verticalmente</h6>
+						<p class="title-item_flex">align-items:center;</p>
+						<p><span class="code"> [ flex a-center ]</span></p>
+						<div class="flex-items flex a-center" style="width:100%;height:200px;">
+							<div class="item-flex">item-1</div>
+							<div class="item-flex">item-2</div>
+							<div class="item-flex">item-3</div>
+							<div class="item-flex">item-4</div>
+							<div class="item-flex">item-6</div>
+							<div class="item-flex">item-7</div>
+						</div>
+					</li>
+					<li>
+						<h6>Alinhando ao inicio verticalmente</h6>
+						<p class="title-item_flex">align-items:flex-start;</p>
+						<p><span class="code"> [ flex a-start ]</span></p>
+						<div class="flex-items flex a-start" style="width:100%;height:200px;">
+							<div class="item-flex">item-1</div>
+							<div class="item-flex">item-2</div>
+							<div class="item-flex">item-3</div>
+							<div class="item-flex">item-4</div>
+							<div class="item-flex">item-6</div>
+							<div class="item-flex">item-7</div>
+						</div>
+					</li>
+					<li>
+						<h6>Alinhando ao fim verticalmente</h6>
+						<p class="title-item_flex">align-items:flex-end;</p>
+						<p><span class="code"> [ flex a-end ]</span></p>
+						<div class="flex-items flex a-end" style="width:100%;height:200px;">
+							<div class="item-flex">item-1</div>
+							<div class="item-flex">item-2</div>
+							<div class="item-flex">item-3</div>
+							<div class="item-flex">item-4</div>
+							<div class="item-flex">item-6</div>
+							<div class="item-flex">item-7</div>
+						</div>
+					</li>
+					<li>
+						<h6>Alinhando stretch</h6>
+						<p class="title-item_flex">align-items:stretch;</p>
+						<p><span class="code"> [ flex a-stretch ]</span></p>
+						<div class="flex-items flex a-stretch" style="width:100%;height:200px;">
+							<div class="item-flex">item-2</div>
+							<div class="item-flex">item-3</div>
+							<div class="item-flex">item-4</div>
+							<div class="item-flex">item-6</div>
+							<div class="item-flex">item-7</div>
+						</div>
+					</li>
+					<li>
+						<h6>Alinhando baseline</h6>
+						<p class="title-item_flex">align-items:baseline;</p>
+						<p><span class="code"> [ flex a-baseline ]</span></p>
+						<div class="flex-items wrap flex a-baseline" style="width:100%;height:200px;">
+							<div class="item-flex">item-2</div>
+							<div class="item-flex">item-3</div>
+							<div class="item-flex">item-4</div>
+							<div class="item-flex">item-6</div>
+							<div class="item-flex">item-7</div>
+							<div class="item-flex">item-8</div>
+							<div class="item-flex">item-9</div>
+							<div class="item-flex">item-10</div>
+							<div class="item-flex">item-11</div>
+							<div class="item-flex">item-12</div>
+							<div class="item-flex">item-13</div>
+						</div>
+					</li>
+					<li>
+						<h6>Alinhando todo conteúdo stretch</h6>
+						<p class="title-item_flex">align-content:stretch;</p>
+						<p><span class="code"> [ flex a-cont-stretch ]</span></p>
+						<div class="flex-items wrap flex a-cont-stretch" style="width:100%;height:300px;">
+							<div class="item-flex">item-1</div>
+							<div class="item-flex">item-2</div>
+							<div class="item-flex">item-3</div>
+							<div class="item-flex">item-4</div>
+							<div class="item-flex">item-6</div>
+						</div>
+						<div class="flex-items wrap dir-col flex a-cont-stretch" style="width:100%;height:300px;">
+							<div class="item-flex">item-1</div>
+							<div class="item-flex">item-2</div>
+							<div class="item-flex">item-3</div>
+							<div class="item-flex">item-4</div>
+							<div class="item-flex">item-6</div>
+						</div>
+					</li>
+					<li>
+						<h6>Alinhando todo conteúdo ao inicio</h6>
+						<p class="title-item_flex">align-content:flex-start;</p>
+						<p><span class="code"> [ flex a-cont-start ]</span></p>
+						<div class="flex-items wrap flex a-cont-start" style="width:100%;height:300px;">
+							<div class="item-flex">item-1</div>
+							<div class="item-flex">item-2</div>
+							<div class="item-flex">item-3</div>
+							<div class="item-flex">item-4</div>
+							<div class="item-flex">item-6</div>
+						</div>
+						<div class="flex-items wrap dir-col flex a-cont-start" style="width:100%;height:300px;">
+							<div class="item-flex">item-1</div>
+							<div class="item-flex">item-2</div>
+							<div class="item-flex">item-3</div>
+							<div class="item-flex">item-4</div>
+							<div class="item-flex">item-6</div>
+						</div>
+					</li>
+					<li>
+						<h6>Alinhando todo conteúdo ao fim</h6>
+						<p class="title-item_flex">align-content:flex-end;</p>
+						<p><span class="code"> [ flex a-cont-end ]</span></p>
+						<div class="flex-items wrap flex a-cont-end" style="width:100%;height:300px;">
+							<div class="item-flex">item-1</div>
+							<div class="item-flex">item-2</div>
+							<div class="item-flex">item-3</div>
+							<div class="item-flex">item-4</div>
+							<div class="item-flex">item-6</div>
+						</div>
+						<div class="flex-items wrap dir-col flex a-cont-end" style="width:100%;height:300px;">
+							<div class="item-flex">item-1</div>
+							<div class="item-flex">item-2</div>
+							<div class="item-flex">item-3</div>
+							<div class="item-flex">item-4</div>
+							<div class="item-flex">item-6</div>
+						</div>
+					</li>
+					<li>
+						<h6>Alinhando todo conteúdo distribuindo totalmente</h6>
+						<p class="title-item_flex">align-content:space-between;</p>
+						<p><span class="code"> [ flex a-cont-between ]</span></p>
+						<div class="flex-items wrap flex a-cont-between" style="width:100%;height:500px;">
+							<div class="item-flex">item-1</div>
+							<div class="item-flex">item-2</div>
+							<div class="item-flex">item-3</div>
+							<div class="item-flex">item-4</div>
+							<div class="item-flex">item-6</div>
+							<div class="item-flex">item-7</div>
+							<div class="item-flex">item-8</div>
+							<div class="item-flex">item-9</div>
+							<div class="item-flex">item-10</div>
+							<div class="item-flex">item-11</div>
+							<div class="item-flex">item-12</div>
+							<div class="item-flex">item-13</div>
+						</div>
+						<div class="flex-items wrap dir-col flex a-cont-between" style="width:100%;height:500px;">
+							<div class="item-flex">item-1</div>
+							<div class="item-flex">item-2</div>
+							<div class="item-flex">item-3</div>
+							<div class="item-flex">item-4</div>
+							<div class="item-flex">item-6</div>
+							<div class="item-flex">item-7</div>
+							<div class="item-flex">item-8</div>
+							<div class="item-flex">item-9</div>
+							<div class="item-flex">item-10</div>
+							<div class="item-flex">item-11</div>
+							<div class="item-flex">item-12</div>
+							<div class="item-flex">item-13</div>
+						</div>
+					</li>
+					<li>
+						<h6>Alinhando todo conteúdo distribuindo</h6>
+						<p class="title-item_flex">align-content:space-around;</p>
+						<p><span class="code"> [ flex a-cont-around ]</span></p>
+						<div class="flex-items wrap flex a-cont-around" style="width:100%;height:500px;">
+							<div class="item-flex">item-1</div>
+							<div class="item-flex">item-2</div>
+							<div class="item-flex">item-3</div>
+							<div class="item-flex">item-4</div>
+							<div class="item-flex">item-6</div>
+							<div class="item-flex">item-7</div>
+							<div class="item-flex">item-8</div>
+							<div class="item-flex">item-9</div>
+							<div class="item-flex">item-10</div>
+							<div class="item-flex">item-11</div>
+							<div class="item-flex">item-12</div>
+							<div class="item-flex">item-13</div>
+						</div>
+						<div class="flex-items wrap dir-col flex a-cont-around" style="width:100%;height:500px;">
+							<div class="item-flex">item-1</div>
+							<div class="item-flex">item-2</div>
+							<div class="item-flex">item-3</div>
+							<div class="item-flex">item-4</div>
+							<div class="item-flex">item-6</div>
+							<div class="item-flex">item-7</div>
+							<div class="item-flex">item-8</div>
+							<div class="item-flex">item-9</div>
+							<div class="item-flex">item-10</div>
+							<div class="item-flex">item-11</div>
+							<div class="item-flex">item-12</div>
+							<div class="item-flex">item-13</div>
+						</div>
+					</li>
+				</ol>
+			</div>
+		</div>
+	</div>
+	
+<script src="script.js"></script>	
+<script src="preview.js"></script>
+</body>
+</html>
