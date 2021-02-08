@@ -121,7 +121,7 @@ header{
     letter-spacing: -1px;
     border-bottom:1px solid #c93b0c; 
 }
-.content,.the_grid,.responsive{
+.padding_top{
     padding-top:50px;
 }
 .alert-1{
