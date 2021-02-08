@@ -1,1 +1,0 @@
-# Occ Gryd Sytem
