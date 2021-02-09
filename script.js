@@ -66,7 +66,15 @@ data_color.forEach(data => {
 // menu-nav-1 toggle-1
 const menu_nav_1 = document.querySelector('.menu-nav-1')
 const toggle_1 = document.querySelector('.toggle-1')
+const menu_direction = document.querySelector('.menu-nav-1').classList
 toggle_1.addEventListener('click', () => {
 	toggle_1.classList.toggle('toggle-1-show')
 	menu_nav_1.classList.toggle('menu-nav-1-show')
 })
+if(menu_direction.value.includes('nav-right')){
+	document.querySelector('.nav-1 .menu').style.order = 2
+	document.querySelector('.nav-1 .brand').style.order = 1
+	document.querySelector('.nav-1').style.justifyContent = 'flex-end'
+}
+
+
