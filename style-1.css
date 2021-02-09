@@ -1,0 +1,183 @@
+/* --- root --- */
+/*Fonts Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+:root{
+	/*Colors*/
+		--primarycolor:#424242;
+		--secondarycolor:#ddd;
+		--maincolor:#414141;
+		--bordercolor:#ccc;
+		--boxshadowcolor:#00000030;
+		--bgdarkcolor:#111111;
+		--bglightcolor:#fff;
+		--textcolor:#424242;
+		--h1color:#111111;
+		--h2color:#111111;
+		--h3color:#111111;
+		--h4color:#111111;
+		--h5color:#111111;
+		--h6color:#111111;
+	/*Font Sizes */
+		--fonttextsize:#fff;
+		--fonth1size:#fff;
+		--fonth2size:#fff;
+		--fonth3size:#fff;
+		--fonth4size:#fff;
+		--fonth5size:#fff;
+		--fonth6size:#fff;
+	/* Font Families */
+		--primaryfont:'Open Sans', sans-serif;
+		--secondaryfont:#fff;
+		--mainfont:#fff;
+}
+
+
+
+/*--- Navgation ----*/
+.navgation{
+	width:100%;
+	padding:5px;
+}
+body{
+	font-size: var(--fonttextsize);
+	color:var(--textcolor);
+	background:var(--bglightcolor);
+	font-family: var(--primaryfont);
+}
+h1{
+	color:var(--h1color);
+	font-size:var(--fonth1size);
+}
+h2{
+	color:var(--h2color);
+	font-size:var(--fonth2size);
+}
+h3{
+	color:var(--h3color);
+	font-size:var(--fonth3size);
+}
+h4{
+	color:var(--h4color);
+	font-size:var(--fonth4size);
+}
+h5{
+	color:var(--h5color);
+	font-size:var(--fonth5size);
+}
+h6{
+	color:var(--h6color);
+	font-size:var(--fonth6size);
+}
+[data-font="main-font"]{
+	font-family: var(--mainfont);
+}
+[data-font="primary-font"]{
+	font-family: var(--primaryfont);
+}
+
+[data-font="secondary-font"]{
+	font-family: var(--secondaryfont);
+}
+[data-color="primary-color"]{
+	color:var(--primarycolor);
+}
+[data-color="secondary-color"]{
+	color:var(--secondarycolor);
+}
+[data-color="main-color"]{
+	color:var(--maincolor);
+}
+
+/*------ Components --------*/
+/*-- Navbar --*/
+.navbar{
+
+}
+.nav-1{
+	height:50px;
+	position: absolute;
+	padding:0 5%;
+	left:0;
+	box-shadow: 0 2px 4px var(--boxshadowcolor);
+}
+.navbar .brand{
+	height:100%;
+	position: relative;
+}
+.navbar .brand h1{
+	font-size: 25px;
+	color:var(--maincolor);
+	font-weight: 800;
+	text-transform: uppercase;
+}
+.navbar .toggle-1{
+	width:25px;
+	height:20px;
+	position: relative;
+	cursor: pointer;
+	z-index:9999;
+}
+.navbar .toggle-1 .line{
+	height:4px;
+	background:var(--primarycolor);
+	border-radius:2px;
+	transition: 0.3s;
+}
+.navbar .toggle-1 .line:before,
+.navbar .toggle-1 .line:after{
+	content:"";
+	display: block;
+	position: absolute;
+	height:4px;
+	background:var(--primarycolor);
+	width:100%;
+	border-radius:2px;
+	transition: 0.3s;
+}
+.navbar .toggle-1 .line:before{
+	top:0;
+}
+.navbar .toggle-1 .line:after{
+	bottom:0;
+}
+[data-bg]{
+	background: #fff;
+	top:0;
+	left:0;
+	z-index:999;
+	box-shadow: 0 4px 8px var(--boxshadowcolor);
+}
+.menu-nav-1 {
+	background:var(--secondarycolor);
+	list-style: none;
+	top:0;
+	left:-101%;
+	transition: 0.3s;
+	z-index: 999;
+}
+.menu-nav-1 li{
+	height:35px;
+	width:90%;
+	margin:2px auto;
+	background: var(--primarycolor);
+}
+.menu-nav-1 li a{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	padding-left: 10px;
+	text-decoration: none;
+	color: #fff;
+}
+/*Toggle*/
+.toggle-1-show .line{
+	transform: rotate(45deg);
+}
+.toggle-1-show .line:before{
+	transform: rotate(90deg);
+}
+.menu-nav-1-show{
+	left:0;
+}
