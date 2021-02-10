@@ -1,5 +1,5 @@
 <p align="center">
-<img src="img/logo.gif" alt="Occ Grid System">
+<img width="50%" src="img/logo.gif" alt="Occ Grid System">
 </p>
 <p align="center">
 <img src="img/logo2.gif" alt="Occ Grid System">
