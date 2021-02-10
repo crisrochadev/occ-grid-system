@@ -1,6 +1,7 @@
 /* --- root --- */
 /*Fonts Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+
 :root{
 	/*Colors*/
 		--primarycolor:#424242;
@@ -18,17 +19,17 @@
 		--h5color:#111111;
 		--h6color:#111111;
 	/*Font Sizes */
-		--fonttextsize:#fff;
-		--fonth1size:#fff;
-		--fonth2size:#fff;
-		--fonth3size:#fff;
-		--fonth4size:#fff;
-		--fonth5size:#fff;
-		--fonth6size:#fff;
+		--fonttextsize:16px;
+		--fonth1size:40px;
+		--fonth2size:35px;
+		--fonth3size:30px;
+		--fonth4size:25px;
+		--fonth5size:20px;
+		--fonth6size:18px;
 	/* Font Families */
-		--primaryfont:'Open Sans', sans-serif;
-		--secondaryfont:#fff;
-		--mainfont:#fff;
+		--primaryfont:'Open Sans';
+		--secondaryfont:'Open Sans';
+		--mainfont:'Open Sans';
 }
 
 
@@ -43,10 +44,12 @@ body{
 	color:var(--textcolor);
 	background:var(--bglightcolor);
 	font-family: var(--primaryfont);
+	overflow-x: hidden;
 }
 h1{
 	color:var(--h1color);
 	font-size:var(--fonth1size);
+	line-height: 1em;
 }
 h2{
 	color:var(--h2color);
@@ -67,6 +70,9 @@ h5{
 h6{
 	color:var(--h6color);
 	font-size:var(--fonth6size);
+}
+img{
+	max-width:100%;
 }
 [data-font="main-font"]{
 	font-family: var(--mainfont);
@@ -113,12 +119,23 @@ h6{
 	justify-content: flex-start;
 	align-items: center;
 	margin:0 10px;
+	position: relative;
+}
+.navbar .brand img{
+	height:70%;
+	display: block;
+	margin:0 5px;
 }
 .navbar .brand h1{
-	font-size: 25px;
-	color:var(--maincolor);
+	font-size:18px;
+	letter-spacing: -1px;
 	font-weight: 800;
 	text-transform: uppercase;
+	position: relative;
+	height:100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 .navbar .toggle-1{
 	width:25px;
@@ -244,6 +261,8 @@ h6{
 		background: transparent;
 		justify-content: flex-start;
 		padding:0;
+		height:auto;
+		width:auto;
 	}
 	.menu-nav-1 li{
 		background: transparent;

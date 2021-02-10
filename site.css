@@ -1,0 +1,70 @@
+.blocos{
+	width:240px;
+}
+@keyframes blocos1 {
+	0%{
+		transform: translate(-100px,-65px) rotate(0);
+	}
+	15%{
+		transform: translate(0,-65px) rotate(90deg);
+	}
+	30%{
+		transform: translate(0) rotate(180deg);
+	}
+	100%{
+		transform: translate(0) rotate(180deg);
+	}
+}
+@keyframes blocos2 {
+	0%{
+		transform: translate(100px,65px) rotate(0);
+	}
+	15%{
+		transform: translate(0,65px) rotate(90deg);
+	}
+	30%{
+		transform: translate(0) rotate(180deg);
+	}
+	100%{
+		transform: translate(0) rotate(180deg);
+	}
+}
+.bloco{
+	width:40px;
+	height:40px;
+	border-radius:4px;
+}
+.bloco:nth-child(even){
+	background:#EE7A80;
+	transition: 2s;
+	animation: blocos1 7s ease infinite;
+	animation-fill-mode: forwards;
+}
+.bloco:nth-child(odd){
+	background:#744247;
+	transition: 2s;
+	animation: blocos2 7s ease infinite;
+	animation-fill-mode: forwards;
+}
+.title_hero{
+	width:260px;
+	margin:0 auto;
+	text-align:center;
+}
+.title_hero h2{
+	font-family: var(--mainfont);
+	font-size:2.3em;
+	line-height: 1em;
+	padding-top:50px;
+	color:#744247;
+}
+.title_hero h3{
+	font-family: var(--primaryfont);
+	color:#EE7A80;
+	padding:0 20px 30px;
+	font-size: 1.3em;
+	line-height: 1em;
+}
+.item_hero{
+	height:300px;
+}

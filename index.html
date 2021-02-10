@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="style-1.css">
+	<link rel="stylesheet" href="site.css">
 	<link rel="shortcut icon" href="logo.svg" type="image/x-icon">
 	<link rel="stylesheet" href="css/prism.css">
 	<title>OCC - Grid System</title>
@@ -22,15 +23,57 @@
 			</ul>
 		</div>
 		<div class="brand">
-			<h1>Occ - Grid System</h1>
+			<h1><img src="img/logo.gif" alt="Occ Grid System">OCC GRID SYSTEM</h1>
 		</div>
 	</div>
 </header>
+<section class="container">
+	<div class="pt-6"></div>
+	<div class="row">
+		<div class="col col-10 col-md-5">
+			<div class="row">
+				<div class="col col-10">
+					<div class="title_hero flex dir-col j-center relative">
+						<h2>OCC GRID SYSTEM</h2>
+						<H3>A GRID SYSTEM FOR YOUR WEB PROJECTS</H3>
+					</div>
+				</div>
+				<div class="col col-10  w-10">
+						<div class="blocos grid grid-tc-5 grid-tr-2 grid-gap-1 mx-auto">
+							<div class="grid-col-1 grid-row-1 bloco"></div>
+							<div class="grid-col-2 grid-row-1 bloco"></div>
+							<div class="grid-col-3 grid-row-1 bloco"></div>
+							<div class="grid-col-4 grid-row-1 bloco"></div>
+							<div class="grid-col-5 grid-row-1 bloco"></div>
+							<div class="grid-col-1 grid-row-2 bloco"></div>
+							<div class="grid-col-2 grid-row-2 bloco"></div>
+							<div class="grid-col-3 grid-row-2 bloco"></div>
+							<div class="grid-col-4 grid-row-2 bloco"></div>
+							<div class="grid-col-5 grid-row-2 bloco"></div>
+						</div>
+				</div>		
+			</div>
+		</div>
+		<div class="col col-10 col-md-5">
+			<div class="item_hero w-10 flex h-10 j-center a-center pl-2 pr-2">
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero dolore ducimus commodi obcaecati hic ad. Dolore quisquam, unde. Quae possimus repellendus iusto cupiditate obcaecati dolorum vel amet ipsam quam similique minus unde, dignissimos eaque harum quod accusantium esse quasi alias fugiat et perferendis incidunt ducimus! Tempora ut vero, tempore reiciendis!</p>
+			</div>
+		</div>
+	</div>
+	
+</section>
 <script src="js/prism.js"></script>
 <script src="script.js"></script>	
 <script src="preview.js"></script>
 <script>
-	occgridsystem();
+	occgridsystem({
+		rootStyles:{
+			h1Color:"#744247",
+			mainFont:"Anton",
+			primaryFont:"Open Sans",
+			secondaryFont:"Big Shoulders Display",
+		}
+	});
 </script>
 </body>
 </html>
