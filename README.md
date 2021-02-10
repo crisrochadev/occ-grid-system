@@ -95,10 +95,6 @@
 ```
 <br>
 
-**use a `class="nav-1"` in your navbar container**
-
-<br>
-
 ### Menu Toggle
 <br>
 <p align="center"></p><table>
