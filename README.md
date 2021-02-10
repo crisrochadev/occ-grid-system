@@ -1,9 +1,9 @@
-<center>
+<p align="center">
 <img src="img/logo.gif" alt="Occ Grid System">
-</center>
-<center>
+</p>
+<p align="center">
 <img src="img/logo2.gif" alt="Occ Grid System">
-</center>
+</p>
 
 
 <h1 align="center">
@@ -71,8 +71,8 @@
 </h3>
 <br>
 ## Navbar
-<center><h3>Nav-1</h3></center>
-<center><img width="100%" src="img/nav1-desktop.png" alt="menu nav-1 occ-grid-system"><img width="100%"  src="img/nav1-mobile.png" alt="menu nav-1 occ-grid-system"></center>
+<p align="center"><h3>Nav-1</h3></p>
+<p align="center"><img width="100%" src="img/nav1-desktop.png" alt="menu nav-1 occ-grid-system"><img width="100%"  src="img/nav1-mobile.png" alt="menu nav-1 occ-grid-system"></p>
 <br>
 ### Navbar responsive
 ```html
@@ -96,42 +96,42 @@
 <br>
 ### Menu Toggle
 <br>
-<center></center><table>
+<p align="center"></p><table>
 	<tr>
 		<td><img src="img/close.png" alt=""></td>
 		<td><img src="img/toggle.png" alt=""></td>
 	</tr>
-</table></center>
+</table></p>
 <br>
 ### Slide Menu
 <br>
 <table>
 	<tbody>
 		<tr>
-			<td><center><b>Default</b></center></td>
-			<td><center><b>Top</b></center></td>
-			<td><center><b>Right</b></center></td>
+			<td><p align="center"><b>Default</b></p></td>
+			<td><p align="center"><b>Top</b></p></td>
+			<td><p align="center"><b>Right</b></p></td>
 		</tr>
 		<tr>
 			<td>
-				<center><img src="img/nav1-mobile.png"></center>
+				<p align="center"><img src="img/nav1-mobile.png"></p>
 			</td>
 			<td>
-				<center><img src="img/nav1-mobile-right.png"></center>
+				<p align="center"><img src="img/nav1-mobile-right.png"></p>
 			</td>
 			<td>
-				<center><img src="img/nav1-mobile.png"></center>
+				<p align="center"><img src="img/nav1-mobile.png"></p>
 			</td>
 		</tr>
 		<tr>
 			<td>
-				<center><img src="img/menu-left.png"></center>
+				<p align="center"><img src="img/menu-left.png"></p>
 			</td>
 			<td>
-				<center><img src="img/menu-topo.png"></center>
+				<p align="center"><img src="img/menu-topo.png"></p>
 			</td>
 			<td>
-				<center><img src="img/menu-right.png"></center>
+				<p align="center"><img src="img/menu-right.png"></p>
 			</td>
 		</tr>
 	</tbody>
@@ -141,8 +141,8 @@
 <br>
 <table>
 	<tr>
-		<td><center><img src="img/nav1-desktop.png" alt=""></center></td>
+		<td><p align="center"><img src="img/nav1-desktop.png" alt=""></p></td>
 	</tr>
 </table>
 <br>
-<center><a href="https://www.ocodigocris.com/occ-grid-system/pages/docs.html#nav-1"><img src="img/documentation.png" alt="Documentation"></a></center>
+<p align="center"><a href="https://www.ocodigocris.com/occ-grid-system/pages/docs.html#nav-1"><img src="img/documentation.png" alt="Documentation"></a></p>
