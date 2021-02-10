@@ -70,10 +70,12 @@
 	❖ Status ✎ under development...
 </h3>
 <br>
+
 ## Navbar
 <p align="center"><h3>Nav-1</h3></p>
 <p align="center"><img width="100%" src="img/nav1-desktop.png" alt="menu nav-1 occ-grid-system"><img width="100%"  src="img/nav1-mobile.png" alt="menu nav-1 occ-grid-system"></p>
 <br>
+
 ### Navbar responsive
 ```html
 <div class="navbar nav-1">
@@ -103,6 +105,7 @@
 	</tr>
 </table></p>
 <br>
+
 ### Slide Menu
 <br>
 <table>
@@ -137,6 +140,7 @@
 	</tbody>
 </table>
 <br>
+
 ### Desktop
 <br>
 <table>
