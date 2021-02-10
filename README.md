@@ -95,7 +95,7 @@
 ```
 <br>
 
-**use a `class="nav-1"` no container da sua navbar**
+**use a `class="nav-1"` in your navbar container**
 
 <br>
 
