@@ -131,13 +131,15 @@
 .gs_responsivo,
 .the_grid{
 	padding:20px 10px;
-	box-shadow: 0 4px 8px rgba(0,0,0,3);
-	background:#fff;
 }
 .the_grid h4{
 	text-align: center;
 	font-size: 1em;
 	padding: 10px 0;
+}
+.item_s{
+	border:1px solid #424242;
+	height:100px;
 }
 .item_s:nth-child(odd){
 	background:var(--h2color);
@@ -149,7 +151,12 @@
 	color:#fff;
 	font-weight: 700;
 }
+.title_responsive,
 .the_grid h3{
+	padding:40px 0 0;
+	margin-bottom:10px;
+}
+.title_responsive{
 	padding:20px 0 0;
 	margin-bottom:10px;
 }
@@ -191,16 +198,35 @@
 	color:var(--h2color);
 }
 .info_gs{
-	padding: 10px;
-	color:var(--h3color);
+	color:var(--textcolor);
 	font-weight: 500;
 }
 .alert{
-	padding:1%;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	margin:20px 0;
+}
+.icon_alert{
+	border:2px solid var(--h2color);
+	width:25px;
+	height:25px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius:100%;
 	color:var(--h2color);
-	font-weight: 600;
-	border-left:5px solid var(--h2color);
-	margin:10px 0;
+	font-weight: 900;
+	background:#fff;
+	position: relative;
+	z-index: 9;
+}
+.alert p{
+	width:calc(100% - 25px);
+	border:1px solid var(--h2color);
+	padding:2% 2% 2% 25px;
+	margin-left: -12px;
+	color:var(--h2color);;
 }
 .alert p a{
 	padding:5px 10px;
@@ -208,6 +234,13 @@
 	color:#fff;
 	text-decoration:none;
 	transition: 0.3s;
+	font-size: 0.7em;
+}
+.alert p em{
+	color:var(--h3color);
+}
+.alert i{
+	width:25px;
 }
 .alert p a:hover{
 	background:var(--h3color);
@@ -262,4 +295,30 @@
 }
 .imgs_devices_con{
 	padding:50px 0;
+}
+.btn_documentation{
+	height:50px;
+}
+.btn_documentation a{
+	height:40px;
+	color:#fff;
+	text-decoration: none;
+	font-weight: 700;
+	width:200px;
+	opacity: 0.9;
+	transition: 0.3s;
+}
+.btn_documentation a:hover{
+	transform: scale(1.1,1.1);
+	opacity: 1;
+}
+.btn_documentation a:focus{
+	transform: scale(0.9,0.9);
+	opacity: .9;
+}
+.btn_documentation a:first-child{
+	background: var(--h2color);
+}
+.btn_documentation a:last-child{
+	background: var(--h3color);
 }
