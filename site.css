@@ -322,3 +322,37 @@
 .btn_documentation a:last-child{
 	background: var(--h3color);
 }
+
+/*--------------------------- grid layout --------------------------------*/
+.info_gl{
+	font-size:1.2em;
+}
+.grid_classes{
+	padding:0 0 40px ;
+}
+.item_classe{
+	border-left:2px solid var(--textcolor);
+	border-bottom:2px solid var(--textcolor);
+	color:var(--h2color);
+	font-weight: 600;
+	text-align: center;
+}
+.item_css{
+	border-right:2px solid var(--textcolor);
+	border-left:2px solid var(--textcolor);
+	border-bottom:2px solid var(--textcolor);
+	color:var(--h3color);
+	font-weight: 600;
+	text-align: center;
+}
+.item_classe.um,
+.item_css.um{
+	border-top:2px solid var(--textcolor);
+}
+.item_classe em,
+.item_css em{
+	color:#414141;
+	font-size:0.7em;
+	display: block;
+	text-align: center;
+}
