@@ -356,3 +356,10 @@
 	display: block;
 	text-align: center;
 }
+.consult  a{
+	color:var(--h2color);
+	text-decoration: none;
+}
+.consult  a:hover{
+	color:var(--h3color);
+}
