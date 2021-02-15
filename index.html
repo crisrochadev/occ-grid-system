@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="inc/css/occgs.css">
+	<link rel="stylesheet" href="inc/css/occgs-comps.css">
+	<link rel="stylesheet" href="inc/css/mobile_up.css">
+	<link rel="stylesheet" href="inc/css/tablet.css">
+	<link rel="stylesheet" href="inc/css/descktop.css">
+	<link rel="stylesheet" href="inc/css/desktop_up.css">
+		<link rel="stylesheet" href="style.css">
+
+	<title>OCC Grid System</title>
+</head>
+<body>
+<header>
+	<div class="navbar-reponsive occ-navbar-1 con fixed" data-bg="#fff">
+		<div class="brand-1">
+			<img src="img/logo.gif" alt="OCC Grid System">
+			<h1>OCC Grid System</h1>
+		</div>
+		<div class="menu_search">
+			<div class="menu-toggle-1 order-2">
+				<span></span>
+			</div>
+			<ul class="menu">
+				<li><a href="index.html">Inicio</a></li>
+				<li class="with-children">Documentação
+					<ul class="sub-menu">
+						<li><a href="pages/docs.html#start">Começando</a></li>
+						<li><a href="pages/docs.html#aditionals">Adcionais</a></li>
+						<li><a href="pages/docs.html#components">Componentes</a></li>
+					</ul>
+				</li>
+				<li><a href="pages/docs.html#components">Componentes</a></li>
+				<li><a href="pages/docs.html#components">Componentes</a></li>
+			</ul>
+			<button class="button">
+				<a href="pages/download.html">Download</a>
+			</button>
+			
+		</div>
+	</div>
+	<div class="row pt-5"></div>
+</header>
+<div class="con">
+	<div class="row hero">
+		<div class="info_hero col col-12 col-md-6">
+			<div class="item_hero w-10 h-auto h-md-10h flex flex-dir-col flex-j-center flex-a-start  py-5 py-md-0 p-1 p-md-3 relative">
+				<h2 class="title_hero flex flex-j-start flex-a-center pl-1 pr-1 pb-1 ">	<span class="pr-1">OCC </span>Grid System
+				</h2>
+				<p class=" pl-1 pr-1">Um sistema de grid simples e funcional para seus projetos web.</p>
+				<div class="flex flex-j-start flex-a-center w-10 btns_hero my-2">
+					<a href="pages/docs.html" class="button simple">Documentação</a>
+					<a href="pages/download.html" class="button">Download</a>
+				</div>
+			</div>
+		</div>
+		<div class="col col-12 col-md-6">
+			<div class="img_hero w-10 h-10 flex flex-j-center flex-a-center">
+				<img src="img/hero_img.png" alt="Grid Of OCC Grid System" class="w-9">
+			</div>
+		</div>
+	</div>
+</div>
+<script src="inc/js/occgs.js"></script>
+<script>
+	occgridsystem({
+		rootStyles:{
+			mainColor:"#744247",
+			primaryColor:"#f05d8a",
+			secondaryColor:"#F3D2DA",
+			linkMainFont:'https://fonts.googleapis.com/css2?family=Ballet&display=swap',
+			linkPrimaryFont:'https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap',
+			bgLightColor:"#fff",
+		}
+	})
+	
+</script>
+</body>
+</html>
