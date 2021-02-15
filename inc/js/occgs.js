@@ -5,29 +5,28 @@ const head = document.querySelector('head')
 
 
  function addStylesheet(font1,font2,font3) { 
- 	let linkToAdd = []
- 	let linkToAdd2 = []
  	let fonts = [font1,font2,font3]
- 	let font = []
- 	 for(let i=0;i<3;i++){
- 	 		  if(fonts[i].includes(' ')){
- 	 		  	let fontMod = fonts[i].replace(" ", "+")
- 	 		  	font.push(fontMod.replace(/^"|"$/g, ''))
- 	 		  }else{
- 	 		  	font.push(fonts[i])
- 	 		  }
-		      linkToAdd.push(document.createElement('link')); 
-		      linkToAdd[i].href =  'https://fonts.gstatic.com'; 
-		      linkToAdd[i].rel = 'preconnect'; 
-		      document.head.appendChild(linkToAdd[i]); 
-		      linkToAdd2.push(document.createElement('link'));
-		      linkToAdd2[i].href =  `https://fonts.googleapis.com/css2?family=${font[i]}&display=swap`;
-		      linkToAdd2[i].rel = 'stylesheet'; 
-		      document.head.appendChild(linkToAdd2[i]);
-      } 
-  
+ 	let head = document.head
+ 	
+	fonts.forEach(font => {
+		if(font && font != undefined){
+			head.insertAdjacentHTML('afterBegin',`<link href="${font}" rel="stylesheet">`)
+		}
+	})    
+	  
     } 
 
+const getFontFamily = (font) =>{
+		let arrayFont = font.split('=')
+		let fontFamily = ''
+		if(arrayFont[1].includes(':')){
+			fontFamily = arrayFont[1].split(':')
+		}else{
+			fontFamily = arrayFont[1].split('&')
+		}
+
+		return fontFamily[0]
+}
 
 const transformKey = key => "--" + key.replace(/([A-Z])/, "$1").toLowerCase()
 const changeRoot = (root) =>{
@@ -44,6 +43,8 @@ const occgridsystem = (set) =>{
 	const configRoot = {
 		darkMode: set && set.configRoot != undefined ? set.configRoot.darkMode : false,
 	}
+
+	const linkFont = `https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap`
 		const initalRoot = {
 			primaryColor: 
 			set && set.rootStyles.primaryColor != undefined ?		
@@ -101,6 +102,18 @@ const occgridsystem = (set) =>{
 			set && set.rootStyles.h6Color != undefined ?		
 			set.rootStyles.h6Color :
 			getStyle(html,'--h6color'),
+			alertColor: 			
+			set && set.rootStyles.alertColor != undefined ?		
+			set.rootStyles.alertColor :
+			getStyle(html,'--alertcolor'),
+			dangerColor: 			
+			set && set.rootStyles.dangerColor != undefined ?		
+			set.rootStyles.dangerColor :
+			getStyle(html,'--dangercolor'),
+			successColor: 			
+			set && set.rootStyles.successColor != undefined ?		
+			set.rootStyles.successColor :
+			getStyle(html,'--successcolor'),
 			fontTextSize: 		
 			set && set.rootStyles.fontTextSize != undefined ?		
 			set.rootStyles.fontTextSize :
@@ -129,17 +142,29 @@ const occgridsystem = (set) =>{
 			set && set.rootStyles.fontH6Size != undefined ?		
 			set.rootStyles.fontH6Size :
 			getStyle(html,'--fonth6size'),
+			linkMainFont: 			
+			set && set.rootStyles.linkMainFont != undefined ?		
+			set.rootStyles.linkMainFont :
+			linkFont,
+			linkSecondaryFont: 			
+			set && set.rootStyles.linkSecondaryFont != undefined ?		
+			set.rootStyles.linkSecondaryFont :
+			linkFont,
+			linkPrimaryFont: 			
+			set && set.rootStyles.linkPrimaryFont != undefined ?		
+			set.rootStyles.linkPrimaryFont :
+			linkFont,
 			primaryFont: 		
-			set && set.rootStyles.primaryFont != undefined ?		
-			set.rootStyles.primaryFont :
+			set && set.rootStyles.linkPrimaryFont != undefined ?		
+			getFontFamily(set.rootStyles.linkPrimaryFont):
 			getStyle(html,'--primaryfont'),
 			secondaryFont:  	
-			set && set.rootStyles.secondaryFont != undefined ?		
-			set.rootStyles.secondaryFont :
+			set && set.rootStyles.linkSecondaryFont != undefined ?		
+			getFontFamily(set.rootStyles.linkSecondaryFont) :
 			getStyle(html,'--secondaryfont'),
 			mainFont: 			
-			set && set.rootStyles.mainFont != undefined ?		
-			set.rootStyles.mainFont :
+			set && set.rootStyles.linkMainFont != undefined ?		
+			getFontFamily(set.rootStyles.linkMainFont):
 			getStyle(html,'--mainfont'),
 		}
 
@@ -147,7 +172,7 @@ const occgridsystem = (set) =>{
 
 		changeRoot(initalRoot)
 
-		addStylesheet(initalRoot.primaryFont,initalRoot.secondaryFont,initalRoot.mainFont)
+		addStylesheet(initalRoot.linkPrimaryFont,initalRoot.linkSecondaryFont,initalRoot.linkMainFont)
 }
 
 
@@ -164,18 +189,40 @@ data_color.forEach(data => {
 })
 
 /* Menus Navbar */
-// menu-nav-1 toggle-1
-const menu_nav_1 = document.querySelector('.menu-nav-1')
-const toggle_1 = document.querySelector('.toggle-1')
-const menu_direction = document.querySelector('.menu-nav-1').classList
-toggle_1.addEventListener('click', () => {
-	toggle_1.classList.toggle('toggle-1-show')
-	menu_nav_1.classList.toggle('menu-nav-1-show')
-})
-if(menu_direction.value.includes('nav-right')){
-	document.querySelector('.nav-1 .menu').style.order = 2
-	document.querySelector('.nav-1 .brand').style.order = 1
-	document.querySelector('.nav-1').style.justifyContent = 'flex-end'
+const nav_1 = document.querySelector('.occ-navbar-1')
+if(nav_1 && nav_1 != undefined){
+	const with_children = document.querySelectorAll('.occ-navbar-1 .with-children');
+	const sub_menu = document.querySelectorAll('.occ-navbar-1 .sub-menu');
+	with_children.forEach((chil,i) => {
+		chil.addEventListener('click',() => {
+			sub_menu[i].classList.toggle('sub-menu-show')
+			chil.style.height = 'auto';
+		})
+	})
+	const menu_toggle = document.querySelector('.menu-toggle-1')
+	const menu = document.querySelector('.navbar-reponsive .menu')
+	menu_toggle.addEventListener('click', () => {
+		menu.classList.toggle('menu-show')
+		menu_toggle.classList.toggle('menu-toggle-1-close')
+	})
+	const search_toggle = document.querySelector(' .search-toggle')
+	if(search_toggle && search_toggle != undefined){
+		const search = document.querySelector('.search-1 .search')
+		search_toggle.addEventListener('click', () => {
+			search.classList.toggle('search-show')
+			search_toggle.classList.toggle('search-toggle-1-close')
+		})
+	}
+	
+
+	// Menu Active
+	const currentLocation = location.href
+	const menuItem = document.querySelectorAll('.occ-navbar-1 .menu li')
+	const menuLink = document.querySelectorAll('.occ-navbar-1 .menu li a')
+		for(let i=0;i<menuLink.length;i++){
+			if(menuLink[i].href === currentLocation){
+						menuLink[i].className = 'active'
+			}
+		}
+
 }
-
-
