@@ -9,6 +9,7 @@
 	<link rel="stylesheet" href="inc/css/tablet.css">
 	<link rel="stylesheet" href="inc/css/descktop.css">
 	<link rel="stylesheet" href="inc/css/desktop_up.css">
+	<link rel="stylesheet" href="inc/css/">
 		<link rel="stylesheet" href="style.css">
 
 	<title>OCC Grid System</title>
@@ -18,7 +19,7 @@
 	<div class="navbar-reponsive occ-navbar-1 con fixed" data-bg="#fff">
 		<div class="brand-1">
 			<img src="img/logo.gif" alt="OCC Grid System">
-			<h1>OCC Grid System</h1>
+			<h1 class="none block-md">OCC Grid System</h1>
 		</div>
 		<div class="menu_search">
 			<div class="menu-toggle-1 order-2">
@@ -33,9 +34,8 @@
 						<li><a href="pages/docs.html#components">Componentes</a></li>
 					</ul>
 				</li>
-				<li><a href="pages/docs.html#components">Componentes</a></li>
-				<li><a href="pages/docs.html#components">Componentes</a></li>
 			</ul>
+			<div class="mx-2"></div>
 			<button class="button">
 				<a href="pages/download.html">Download</a>
 			</button>
@@ -47,7 +47,7 @@
 <div class="con">
 	<div class="row hero">
 		<div class="info_hero col col-12 col-md-6">
-			<div class="item_hero w-10 h-auto h-md-10h flex flex-dir-col flex-j-center flex-a-start  py-5 py-md-0 p-1 p-md-3 relative">
+			<div class="item_hero w-10 h-auto h-md-10h flex flex-dir-col flex-j-center flex-a-start  pt-5 pt-md-0 p-1 p-md-3 relative">
 				<h2 class="title_hero flex flex-j-start flex-a-center pl-1 pr-1 pb-1 ">	<span class="pr-1">OCC </span>Grid System
 				</h2>
 				<p class=" pl-1 pr-1">Um sistema de grid simples e funcional para seus projetos web.</p>
@@ -63,8 +63,135 @@
 			</div>
 		</div>
 	</div>
+	<div class="row icons_topo">
+		<div class="col col-12 col-md-4">
+			<a href="#responsive"><div class="icon_topo flex flex-dir-col flex-a-center flex-j-between my-2">
+				<div class="decor"></div>
+				<img src="img/mobile.svg" alt="">
+				<h3 class="py-1 text-a-center">Mobile First</h3>
+			</div></a>
+			
+		</div>
+		<div class="col col-12 col-md-4">
+			<a href="#download"><div class="icon_topo flex flex-dir-col flex-a-center flex-j-between my-2">
+				<div class="decor"></div>
+				<img src="img/penas.svg" alt="">
+				<h3 class="py-1 text-a-center">Super Leve</h3>
+			</div></a>
+			
+		</div>
+		<div class="col col-12 col-md-4">
+			<a href="#usage"><div class="icon_topo flex flex-dir-col flex-a-center flex-j-between my-2">
+				<div class="decor"></div>
+				<img src="img/interface.svg" alt="">
+				<h3 class="py-1 text-a-center">3 opções de uso</h3>	
+			</div></a>
+			
+		</div>
+	</div>
+	<div class="row description py-5"   id="responsive">
+		<div class="col col-12 col-md-6">
+			<img class="block mx-auto h-10" src="img/mobile.png" alt="OCC Grid System">
+		</div>
+		<div class="col col-12 col-md-6">
+			<div class="content_mf flex flex-dir-col flex-j-center flex-a-start h-10 p-1">
+				<h4 class="py-1 flex flex-a-center">Mobile First</h4>
+				<p class="py-1">Comece desenvolvendo para celular, as classes padrões abrangem todos os dispositivos, porém para diferenciar uma tela de outra, use <code>sm,md,lg ou xl</code>dependendo da resolução onde o conteúdo será exibido. O OCCGS é versátil te dando a possibilidade de trabalhar com o próprio sistema de grade que foi criado pensando nas necessidades básicas de desenvolvimento, mas também inclui <a href="#usage">o grid layout e flexbox do próprio css </a> facilitando ainda mais o processo de criação !</p>
+			</div>
+			
+		</div>
+	</div>
+	<div class="row exemples py-3">
+		<div class="col col-12 col-md-4"><img src="img/tablet.png" alt="Tablet" class="block mx-auto tablet"></div>
+		<div class="col col-12 col-md-4"><img src="img/notebook.png" alt="Notebook" class="block mx-auto notebook"></div>
+		<div class="col col-12 col-md-4"><img src="img/mac.png" alt="Desktop" class="block mx-auto desktop"></div>
+	</div>
+	<div class="row leve py-10" id="download">
+		<div class="col col-12 col-md-6 order-2 order-md-1">
+			<div class="text_leve py-3 px-1 h-10 flex flex-dir-col flex-j-center
+			flex-a-start">
+				<h4 class="py-1">Super Leve</h4>
+				<p>Carrege apenas o necessário. O OCCGS é apenas um arquivo css, cuidadosamente escrito para não pesar em seu site ou aplicativo. É possivel usar e editar a versão completa, porém para o melhor desempenho recomenda-se usar a versão compactada. Os componentes e adcionais do sistema de grid, ainda estão em desenvolvimento, mas sempre pensando na melhor performance.</p>
+			</div>
+		</div>
+		<div class="col col-12 col-md-6 order-1 order-md-2"><img class="w-6 block mx-auto" src="img/penas.svg" alt="Super Leve"></div>
+	</div>
+	<div class="row grid_system" id="usage">
+		<div class="col col-12 p-1">
+			<h4 class="py-1">Três formas de uso</h4>
+			<p class="py-1">Você pode usar a forma mais simples do sistema de grid, mas pode também aproveitar as classes pré prontas com o grid layout e flexbox</p>
+		</div>
+		<div class="col col-12 col-md-4 order-1">
+			<h3 class="px-1">OCC Grid System</h3>
+			<p class="p-1">
+				Simples e funcional, o occgs veio para facilitar sua vida, permitindo que a estrutura seja bem formatada antes mesmo de chegar no css.
+			</p>
+		</div>
+		<div class="col col-12 col-md-4 order-3 order-md-2">
+			<h3 class="px-1">Grid Layout</h3>
+			<p class="p-1">
+				Se você é do team grid, aproveite as classes prontas do occgs e monte seus grids dentro do próprio html, deixando para o css apenas a estilização. 
+			</p>
+		</div>
+		<div class="col col-12 col-md-4 order-5 order-md-3">
+			<h3 class="px-1">Flexbox</h3>
+			<p class="p-1">
+				O flexbox também pode ser usado facilmente, 80% das funções já preestabelecidas no sistema de grid, salvo aquelas que precisam de uma atencão especial. 
+			</p>
+		</div>
+		<div class="col col-12 order-2 order-md-4">
+			<div class="exemple_occgs">
+				<h5 class="p-1">Exemplo OCC Grid System</h5>
+				<div class="folder-tree">FOlder Tree</div>
+				<div class="row occgs">
+					<div class="col col-1 item">1</div>
+					<div class="col col-1 item">2</div>
+					<div class="col col-1 item">3</div>
+					<div class="col col-1 item">4</div>
+					<div class="col col-1 item">5</div>
+					<div class="col col-1 item">6</div>
+					<div class="col col-1 item">7</div>
+					<div class="col col-1 item">8</div>
+					<div class="col col-1 item">9</div>
+					<div class="col col-1 item">10</div>
+					<div class="col col-1 item">11</div>
+					<div class="col col-1 item">12</div>
+					<div class="col col-2 item">1</div>
+					<div class="col col-2 item">2</div>
+					<div class="col col-2 item">3</div>
+					<div class="col col-2 item">4</div>
+					<div class="col col-2 item">5</div>
+					<div class="col col-2 item">6</div>
+					<div class="col col-3 item">1</div>
+					<div class="col col-3 item">2</div>
+					<div class="col col-3 item">3</div>
+					<div class="col col-3 item">4</div>
+					<div class="col col-4 item">1</div>
+					<div class="col col-4 item">2</div>
+					<div class="col col-4 item">3</div>
+					<div class="col col-5 item">1</div>
+					<div class="col col-5 item">2</div>
+					<div class="col col-2 item">3</div>
+					<div class="col col-6 item">1</div>
+					<div class="col col-6 item">2</div>
+					<div class="col col-7 item">1</div>
+					<div class="col col-5 item">2</div>
+					<div class="col col-8 item">1</div>
+					<div class="col col-4 item">2</div>
+					<div class="col col-9 item">1</div>
+					<div class="col col-3 item">2</div>
+					<div class="col col-10 item">1</div>
+					<div class="col col-2 item">2</div>
+					<div class="col col-11 item">1</div>
+					<div class="col col-1 item">2</div>
+					<div class="col col-12 item">1</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </div>
 <script src="inc/js/occgs.js"></script>
+<script src="inc/js/feather.js"></script>
 <script>
 	occgridsystem({
 		rootStyles:{

@@ -21,3 +21,86 @@
 	font-size:1.4em;
 	line-height: 1.2em;
 }
+
+.icons_topo img{
+	width:150px;	position: relative;
+	z-index:9;
+	padding:50px 0 0;
+}
+.icons_topo a{
+	text-decoration: none;
+}
+
+.icons_topo .decor{
+	background: var(--primarycolor);
+	width:150px;
+	height:150px;
+	border-radius:75% 10% 50% 25%;
+	position: absolute;
+	top:50px;
+	left:50%;
+	transform:translateX(-50%);
+	opacity: 0.6;
+	z-index:7;
+}
+.icons_topo .decor:after{
+	content:"";
+	background: var(--secondarycolor);
+	display: block;
+	position: absolute;
+	top:10%;
+	left:-20px;
+	width:150px;
+	height:150px;
+	border-radius:75% 10% 50% 25%;
+	transform:rotate(90deg);
+	z-index:6;
+}
+.icon_topo {
+	position: relative;
+}
+.icon_topo h3{
+	position: relative;
+	z-index: 8;
+	text-transform: uppercase;
+	color:var(--textcolor);
+	font-weight: 800;
+}
+h4{
+	color:var(--maincolor);
+	text-transform: uppercase;
+	font-weight: 800;
+}
+.exemples h4 img{
+	width:35px;
+}
+.content_mf a{
+	color:var(--primarycolor);
+	text-decoration: none;
+}
+code{
+	background: var(--secondarycolor);
+	padding:0 10px;
+	margin:0 10px;
+}
+.exemples {
+	box-shadow:0 4px 8px var(--boxshadowcolor);
+}
+.exemples .tablet{
+	height:250px;
+}
+.exemples .notebook{
+	height:250px;
+}
+.exemples .desktop{
+	height:250px;
+}
+.item{
+	background:var(--maincolor);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height:40px;
+	color:var(--secondarycolor);
+	font-weight: 700;
+}

@@ -1,22 +1,25 @@
 /* ----------- Desktop [lg]-----------*/
 @media (min-width:1200px){
+body{
+    font-size: calc(var(--fonttextsize) + 6px)
+}
 h1{
-    font-size:calc(var(--fonth1size) + 20px);
+    font-size:calc(var(--fonth1size) + 6px);
 }
 h2{
-    font-size:calc(var(--fonth2size) + 20px);
+    font-size:calc(var(--fonth2size) + 6px);
 }
 h3{
-    font-size:calc(var(--fonth3size) + 20px);
+    font-size:calc(var(--fonth3size) + 6px);
 }
 h4{
-    font-size:calc(var(--fonth4size) + 20px);
+    font-size:calc(var(--fonth4size) + 6px);
 }
 h5{
-    font-size:calc(var(--fonth5size) + 20px);
+    font-size:calc(var(--fonth5size) + 6px);
 }
 h6{
-    font-size:calc(var(--fonth6size) + 20px);
+    font-size:calc(var(--fonth6size) + 6px);
 }	
 
 /* ----------------------------------------
@@ -814,52 +817,41 @@ h6{
                 OCC GRID SYSTEM
 -----------------------------------------------------
 -------------------------------------------------- */
-.col-lg-1 {
-  width:7.569475%;
+.col-xl-1 {
+  width:calc(8.3333% - 6px);
 }
-
-.col-lg-2 {
-  width: 15.97225%;
+.col-xl-2{
+    width:calc(16.6666% - 6px);
 }
-
-.col-3 {
-  width: 24.375025%;
+.col-xl-3{
+    width:calc(24.999% - 6px);
 }
-
-.col-lg-4 {
-  width: 32.7778%;
+.col-xl-4{
+    width:calc(33.3323% - 6px);
 }
-
-.col-lg-5 {
-  width: 41.180575%;
+.col-xl-5{
+    width:calc(41.6656% - 6px);
 }
-
-.col-lg-6 {
-  width: 49.58335%;
+.col-xl-6{
+    width:calc(49.9989% - 6px);
 }
-
-.col-lg-7 {
-  width: 57.986125%;
+.col-xl-7{
+    width:calc(58.3331% - 6px);
 }
-
-.col-lg-8 {
-  width: 66.3889%;
+.col-xl-8{
+    width:calc(66.6664% - 6px);
 }
-
-.col-lg-9 {
-  width: 74.791675%;
+.col-xl-9{
+    width:calc(74.9997% - 6px);
 }
-
-.col-lg-10 {
-  width: 83.19445%;
+.col-xl-10{
+    width:calc(83.3333% - 6px);
 }
-
-.col-lg-11 {
-  width: 91.597225%;
+.col-xl-11{
+    width:calc(91.6663% - 6px);
 }
-
-.col-lg-12 {
-  width: 100%;
+.col-xl-12{
+    width:calc(99.9996% - 6px);
 }
 /* --------------------------------------------------
 -----------------------------------------------------
@@ -1599,40 +1591,40 @@ h6{
     grid-row: 11/13;
 }
 /*Grid Gap*/
-.grid-md-gap-1{
+.grid-lg-gap-1{
     grid-gap:10px;
 }
-.grid-md-gap-2{
+.grid-lg-gap-2{
     grid-gap:20px;
 }
-.grid-md-gap-3{
+.grid-lg-gap-3{
     grid-gap:30px;
 }
-.grid-md-gap-4{
+.grid-lg-gap-4{
     grid-gap:40px;
 }
-.grid-md-gap-5{
+.grid-lg-gap-5{
     grid-gap:50px;
 }
-.grid-md-gap-6{
+.grid-lg-gap-6{
     grid-gap:60px;
 }
-.grid-md-gap-7{
+.grid-lg-gap-7{
     grid-gap:70px;
 }
-.grid-md-gap-8{
+.grid-lg-gap-8{
     grid-gap:80px;
 }
-.grid-md-gap-9{
+.grid-lg-gap-9{
     grid-gap:90px;
 }
-.grid-md-gap-10{
+.grid-lg-gap-10{
     grid-gap:100px;
 }
-.grid-md-gap-11{
+.grid-lg-gap-11{
     grid-gap:110px;
 }
-.grid-md-gap-12{
+.grid-lg-gap-12{
     grid-gap:120px;
 }
 /* --------------------------------------------------

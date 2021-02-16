@@ -1,23 +1,25 @@
 /*------------- Desktop Up [xl]--------------*/
 @media (min-width:1800px){
-	
+body{
+    font-size: calc(var(--fonttextsize) + 8px)
+}
 h1{
-    font-size:calc(var(--fonth1size) + 25px);
+    font-size:calc(var(--fonth1size) + 8px);
 }
 h2{
-    font-size:calc(var(--fonth2size) + 25px);
+    font-size:calc(var(--fonth2size) + 8px);
 }
 h3{
-    font-size:calc(var(--fonth3size) + 25px);
+    font-size:calc(var(--fonth3size) + 8px);
 }
 h4{
-    font-size:calc(var(--fonth4size) + 25px);
+    font-size:calc(var(--fonth4size) + 8px);
 }
 h5{
-    font-size:calc(var(--fonth5size) + 25px);
+    font-size:calc(var(--fonth5size) + 8px);
 }
 h6{
-    font-size:calc(var(--fonth6size) + 25px);
+    font-size:calc(var(--fonth6size) + 8px);
 }
 /* ----------------------------------------
                Measures
@@ -814,152 +816,141 @@ h6{
                 OCC GRID SYSTEM
 -----------------------------------------------------
 -------------------------------------------------- */
-.col-xl-1 {
-  width:7.569475%;
+.col-lg-1 {
+  width:calc(8.3333% - 6px);
 }
-
-.col-xl-2 {
-  width: 15.97225%;
+.col-lg-2{
+    width:calc(16.6666% - 6px);
 }
-
-.col-3 {
-  width: 24.375025%;
+.col-lg-3{
+    width:calc(24.999% - 6px);
 }
-
-.col-xl-4 {
-  width: 32.7778%;
+.col-lg-4{
+    width:calc(33.3323% - 6px);
 }
-
-.col-xl-5 {
-  width: 41.180575%;
+.col-lg-5{
+    width:calc(41.6656% - 6px);
 }
-
-.col-xl-6 {
-  width: 49.58335%;
+.col-lg-6{
+    width:calc(49.9989% - 6px);
 }
-
-.col-xl-7 {
-  width: 57.986125%;
+.col-lg-7{
+    width:calc(58.3331% - 6px);
 }
-
-.col-xl-8 {
-  width: 66.3889%;
+.col-lg-8{
+    width:calc(66.6664% - 6px);
 }
-
-.col-xl-9 {
-  width: 74.791675%;
+.col-lg-9{
+    width:calc(74.9997% - 6px);
 }
-
-.col-xl-10 {
-  width: 83.19445%;
+.col-lg-10{
+    width:calc(83.3333% - 6px);
 }
-
-.col-xl-11 {
-  width: 91.597225%;
+.col-lg-11{
+    width:calc(91.6663% - 6px);
 }
-
-.col-xl-12 {
-  width: 100%;
+.col-lg-12{
+    width:calc(99.9996% - 6px);
 }
 /* --------------------------------------------------
 -----------------------------------------------------
                 GRID LAYOUT
 -----------------------------------------------------
 -------------------------------------------------- */
-.grid-lg-inline{
+.grid-xl-inline{
     display: inline-grid;
 }
-.grid-lg-j-center{
+.grid-xl-j-center{
     justify-content: center;
 }
-.grid-lg-j-start{
+.grid-xl-j-start{
     justify-content: start;
 }
-.grid-lg-j-end{
+.grid-xl-j-end{
     justify-content: end;
 }
-.grid-lg-j-center{
+.grid-xl-j-center{
     justify-content: center;
 }
-.grid-lg-j-stretch{
+.grid-xl-j-stretch{
     justify-content: stretch;
 }
-.grid-lg-j-around{
+.grid-xl-j-around{
     justify-content: space-around;
 }
-.grid-lg-j-between{
+.grid-xl-j-between{
     justify-content: space-between;
 }
-.grid-lg-j-evenly{
+.grid-xl-j-evenly{
     justify-content: space-evenly;
 }
-.grid-lg-a-cont-start{
+.grid-xl-a-cont-start{
     align-content: start;
 }
-.grid-lg-a-cont-end{
+.grid-xl-a-cont-end{
     align-content: end;
 }
-.grid-lg-a-cont-center{
+.grid-xl-a-cont-center{
     align-content: center;
 }
-.grid-lg-a-cont-stretch{
+.grid-xl-a-cont-stretch{
     align-content: stretch;
 }
-.grid-lg-cont-around{
+.grid-xl-cont-around{
     align-content: space-around;
 }
-.grid-lg-cont-between{
+.grid-xl-cont-between{
     align-content: space-between;
 }
-.grid-lg-cont-evenly{
+.grid-xl-cont-evenly{
     align-content: space-evenly;
 }
-.grid-lg-j-items-start{
+.grid-xl-j-items-start{
     justify-items: start;
 }
-.grid-lg-j-items-end{
+.grid-xl-j-items-end{
     justify-items: end;
 }
-.grid-lg-j-items-center{
+.grid-xl-j-items-center{
     justify-items: center;
 }
-.grid-lg-j-items-strech{
+.grid-xl-j-items-strech{
     justify-items: stretch;
 }
-.grid-lg-a-start{
+.grid-xl-a-start{
     align-items: start;
 }
-.grid-lg-a-end{
+.grid-xl-a-end{
     align-items: end;
 }
-.grid-lg-a-center{
+.grid-xl-a-center{
     align-items: center;
 }
-.grid-lg-a-stretch{
+.grid-xl-a-stretch{
     align-items: stretch;
 }
-.grid-lg-j-self-start{
+.grid-xl-j-self-start{
     justify-self: start;
 }
-.grid-lg-j-self-end{
+.grid-xl-j-self-end{
     justify-self: end;
 }
-.grid-lg-j-self-center{
+.grid-xl-j-self-center{
     justify-self: center;
 }
-.grid-lg-j-self-stretch{
+.grid-xl-j-self-stretch{
     justify-self: stretch;
 }
-.grid-lg-a-self-start{
+.grid-xl-a-self-start{
     align-self: start;
 }
-.grid-lg-a-self-end{
+.grid-xl-a-self-end{
     align-self: end;
 }
-.grid-lg-a-self-center{
+.grid-xl-a-self-center{
     align-self: center;
 }
-.grid-lg-a-self-stretch{
+.grid-xl-a-self-stretch{
     align-self: stretch;
 }
 /*Template Columns*/
