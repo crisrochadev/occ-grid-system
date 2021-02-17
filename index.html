@@ -46,8 +46,8 @@
 </header>
 <div class="con">
 	<div class="row hero">
-		<div class="info_hero col col-12 col-md-6">
-			<div class="item_hero w-10 h-auto h-md-10h flex flex-dir-col flex-j-center flex-a-start  pt-5 pt-md-0 p-1 p-md-3 relative">
+		<div class="info_hero col col-12 col-sm-6 order-2 order-sm-1">
+			<div class="item_hero w-10 h-auto h-sm-10 h-lg-10h flex flex-dir-col flex-j-center flex-a-start  pt-5 pt-sm-0 p-1 p-sm-3 relative">
 				<h2 class="title_hero flex flex-j-start flex-a-center pl-1 pr-1 pb-1 ">	<span class="pr-1">OCC </span>Grid System
 				</h2>
 				<p class=" pl-1 pr-1">Um sistema de grid simples e funcional para seus projetos web.</p>
@@ -57,14 +57,14 @@
 				</div>
 			</div>
 		</div>
-		<div class="col col-12 col-md-6">
+		<div class="col col-12 col-sm-6">
 			<div class="img_hero w-10 h-10 flex flex-j-center flex-a-center">
 				<img src="img/hero_img.png" alt="Grid Of OCC Grid System" class="w-9">
 			</div>
 		</div>
 	</div>
 	<div class="row icons_topo">
-		<div class="col col-12 col-md-4">
+		<div class="col col-12 col-sm-4">
 			<a href="#responsive"><div class="icon_topo flex flex-dir-col flex-a-center flex-j-between my-2">
 				<div class="decor"></div>
 				<img src="img/mobile.svg" alt="">
@@ -72,7 +72,7 @@
 			</div></a>
 			
 		</div>
-		<div class="col col-12 col-md-4">
+		<div class="col col-12 col-sm-4">
 			<a href="#download"><div class="icon_topo flex flex-dir-col flex-a-center flex-j-between my-2">
 				<div class="decor"></div>
 				<img src="img/penas.svg" alt="">
@@ -80,7 +80,7 @@
 			</div></a>
 			
 		</div>
-		<div class="col col-12 col-md-4">
+		<div class="col col-12 col-sm-4">
 			<a href="#usage"><div class="icon_topo flex flex-dir-col flex-a-center flex-j-between my-2">
 				<div class="decor"></div>
 				<img src="img/interface.svg" alt="">
@@ -90,10 +90,10 @@
 		</div>
 	</div>
 	<div class="row description py-5"   id="responsive">
-		<div class="col col-12 col-md-6">
+		<div class="col col-12 col-md-6 order-2 order-md-1">
 			<img class="block mx-auto h-10" src="img/mobile.png" alt="OCC Grid System">
 		</div>
-		<div class="col col-12 col-md-6">
+		<div class="col col-12 col-md-6 order-1 order-md-2">
 			<div class="content_mf flex flex-dir-col flex-j-center flex-a-start h-10 p-1">
 				<h4 class="py-1 flex flex-a-center">Mobile First</h4>
 				<p class="py-1">Comece desenvolvendo para celular, as classes padrões abrangem todos os dispositivos, porém para diferenciar uma tela de outra, use <code>sm,md,lg ou xl</code>dependendo da resolução onde o conteúdo será exibido. O OCCGS é versátil te dando a possibilidade de trabalhar com o próprio sistema de grade que foi criado pensando nas necessidades básicas de desenvolvimento, mas também inclui <a href="#usage">o grid layout e flexbox do próprio css </a> facilitando ainda mais o processo de criação !</p>
@@ -101,48 +101,66 @@
 			
 		</div>
 	</div>
-	<div class="row exemples py-3">
-		<div class="col col-12 col-md-4"><img src="img/tablet.png" alt="Tablet" class="block mx-auto tablet"></div>
-		<div class="col col-12 col-md-4"><img src="img/notebook.png" alt="Notebook" class="block mx-auto notebook"></div>
-		<div class="col col-12 col-md-4"><img src="img/mac.png" alt="Desktop" class="block mx-auto desktop"></div>
-	</div>
-	<div class="row leve py-10" id="download">
-		<div class="col col-12 col-md-6 order-2 order-md-1">
+	<div class="row leve py-2" id="download">
+		<div class="col col-12 col-md-6 order-1">
 			<div class="text_leve py-3 px-1 h-10 flex flex-dir-col flex-j-center
 			flex-a-start">
 				<h4 class="py-1">Super Leve</h4>
 				<p>Carrege apenas o necessário. O OCCGS é apenas um arquivo css, cuidadosamente escrito para não pesar em seu site ou aplicativo. É possivel usar e editar a versão completa, porém para o melhor desempenho recomenda-se usar a versão compactada. Os componentes e adcionais do sistema de grid, ainda estão em desenvolvimento, mas sempre pensando na melhor performance.</p>
 			</div>
 		</div>
-		<div class="col col-12 col-md-6 order-1 order-md-2"><img class="w-6 block mx-auto" src="img/penas.svg" alt="Super Leve"></div>
+		<div class="col col-12 col-md-6 order-2"><img class="w-6 block mx-auto" src="img/penas.svg" alt="Super Leve"></div>
 	</div>
-	<div class="row grid_system" id="usage">
-		<div class="col col-12 p-1">
+	<div class="row grid_system " id="usage">
+		<div class="col col-12 col-md-6 p-1 order-1 order-md-2 flex flex-dir-col flex-j-center py-5">
 			<h4 class="py-1">Três formas de uso</h4>
 			<p class="py-1">Você pode usar a forma mais simples do sistema de grid, mas pode também aproveitar as classes pré prontas com o grid layout e flexbox</p>
 		</div>
-		<div class="col col-12 col-md-4 order-1">
-			<h3 class="px-1">OCC Grid System</h3>
-			<p class="p-1">
+		<div class="col col-12 col-md-6 py-5 order-2 order-2 order-md-1">
+			<img class="w-6 block mx-auto" src="img/interface.svg" alt="">
+		</div>
+		<div class="options_item col col-12 col-md-4 order-3 order-md-3">
+			<h3 class="pt-2 pb-1 flex flex-j-start flex-a-center"><div class="icon_occgs mr-1"><span></span><span></span></div>OCC Grid System</h3>
+			<p>
 				Simples e funcional, o occgs veio para facilitar sua vida, permitindo que a estrutura seja bem formatada antes mesmo de chegar no css.
 			</p>
 		</div>
-		<div class="col col-12 col-md-4 order-3 order-md-2">
-			<h3 class="px-1">Grid Layout</h3>
-			<p class="p-1">
+		<div class="options_item col col-12 col-md-4 order-5 order-md-4">
+			<h3 class="pt-2 pb-1 flex flex-j-start flex-a-center"><div class="icon_gridlayout mr-1"><span></span><span></span></div>Grid Layout</h3>
+			<p>
 				Se você é do team grid, aproveite as classes prontas do occgs e monte seus grids dentro do próprio html, deixando para o css apenas a estilização. 
 			</p>
 		</div>
-		<div class="col col-12 col-md-4 order-5 order-md-3">
-			<h3 class="px-1">Flexbox</h3>
-			<p class="p-1">
+		<div class="options_item col col-12 col-md-4 order-7 order-md-5">
+			<h3 class="pt-2 pb-1 flex flex-j-start flex-a-center"><div class="icon_flexbox mr-1"><span></span><span></span></div>Flexbox</h3>
+			<p>
 				O flexbox também pode ser usado facilmente, 80% das funções já preestabelecidas no sistema de grid, salvo aquelas que precisam de uma atencão especial. 
 			</p>
 		</div>
-		<div class="col col-12 order-2 order-md-4">
+		<div class="col col-12 order-4 order-md-6">
 			<div class="exemple_occgs">
-				<h5 class="p-1">Exemplo OCC Grid System</h5>
-				<div class="folder-tree">FOlder Tree</div>
+				<h5 class="py-1 flex flex-a-center flex-j-start">Exemplo OCC Grid System</h5>
+				<div class="folder-tree">
+					<p class="tree"><code>con</code></p>
+					<p class="tree ml-4"><code>row</code></p>
+					<p class="tree ml-8"><code>col</code></p>
+					<p class="items_tree">
+						<code>
+							 col-1 |
+							 col-2 |
+							 col-3 |
+							 col-4 |
+							 col-5 |
+							 col-6 |
+							 col-7 |
+							 col-8 |
+							 col-9 |
+							 col-10 |
+							 col-11 |
+							 col-12
+						</code>
+					</p>
+				</div>
 				<div class="row occgs">
 					<div class="col col-1 item">1</div>
 					<div class="col col-1 item">2</div>
@@ -188,8 +206,152 @@
 				</div>
 			</div>
 		</div>
+		<div class="col col-12 order-6 order-md-7">
+			<div class="exemple_occgs">
+				<h5 class="py-1 flex flex-j-start flex-a-center">Exemplo  Grid Layout</h5>
+				<div class="folder-tree">
+					<p class="tree"><code>grid | grid-tc-6 | grid-tr-6 | grid-gap-1</code></p>
+					<p class="items_tree">
+						<code>
+							 grid-col-1-3  grid-row-1 |
+							 grid-col-1-3 grid-row-2-7 |
+							 grid-col-3-5 grid-row-1-3 |
+							 grid-col-3 grid-row-3 |
+							 grid-col-3-5 grid-row-4-7 |
+							 grid-col-4 grid-row-3 |
+							 grid-col-5-7 grid-row-1-5 |
+							 grid-col-5-7 grid-row-5-7 
+						</code>
+					</p>
+				</div>
+				<div class="grid grid-tc-6 grid-tr-6 grid-gap-1">
+					<div class="item_grid grid-col-1-3  grid-row-1">1</div>
+					<div class="item_grid grid-col-1-3 grid-row-2-7">2</div>
+					<div class="item_grid grid-col-3-5 grid-row-1-3">3</div>
+					<div class="item_grid grid-col-3 grid-row-3">4</div>
+					<div class="item_grid grid-col-3-5 grid-row-4-7">5</div>
+					<div class="item_grid grid-col-4 grid-row-3">6</div>
+					<div class="item_grid grid-col-5-7 grid-row-1-5">7</div>
+					<div class="item_grid grid-col-5-7 grid-row-5-7">8</div>
+				</div>
+			</div>
+		</div>
+		<div class="col col-12 order-8">
+			<div class="exemple_occgs">
+				<h5 class="py-1 flex flex-j-start flex-a-center">Exemplo FlexBox</h5>
+				<div class="folder-tree">
+					<p class="tree"><code>flex | flex-wrap | flex-j-center</code></p>
+					<p class="items_tree">
+						<code>
+							 w-3 flex-grow-1 |
+							 w-3 flex-grow-1 |
+							 w-3 flex-grow-1|
+							 w-5 |
+							 w-5 |
+							 w-10 |
+							 w-1 mr-1 flex-grow-1 |
+							 w-1 mr-1 | flex-grow-1 |
+							 w-1 mr-1 | flex-grow-1 |
+							 w-1 mr-1 | flex w-1  flex-grow-1 | w-6 | w-4 
+						</code>
+					</p>
+				</div>
+				<div class="flex flex-wrap flex-j-center">
+					<div class="item_flex w-3 flex-grow-1">1</div>
+					<div class="item_flex w-3 flex-grow-1">2</div>
+					<div class="item_flex w-3 flex-grow-1">3</div>
+					<div class="item_flex w-5">4</div>
+					<div class="item_flex w-5">5</div>
+					<div class="item_flex w-10">6</div>
+					<div class="item_flex w-1 mr-1 flex-grow-1">1</div>
+					<div class="item_flex w-1 mr-1">2</div>
+					<div class="item_flex w-1 mr-1">3</div>
+					<div class="item_flex w-1 mr-1">4</div>
+					<div class="item_flex w-1  flex-grow-1">5</div>
+					<div class="item_flex w-6">1</div>
+					<div class="item_flex w-4">2</div>
+				</div>
+				<div class="text_alert">
+					<p>
+						No flexbox pode ser usado as classes adicionais, de medida e alinhamento como <code>mr-N</code> para <code>margin-right:Npx;</code> ou <code>w-N</code> para <code>width:N%;</code>a fim de obter resultados precisos.
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row btn_actions py-5">
+		<div class="col col-12">
+			<h3>Experimente o OCC Grid System em seus projetos</h3>
+			<p class="py-1 info_action_form">Baixe e ultilize em um dos seus projetos, depois volte e nos conte como foi a experiência. Você pode contribuir com o projeto no <a class="link_github" target="blank_" href="https://github.com/crisrochadev/occ-grid-system"><img class="inline-block ml-1" width="14px" src="img/icons/github.svg" alt="img/icons/github.svg">GitHub</a> !</p>
+		</div>
+		<div class="col col-12 col-sm-6 img_form">
+			<img class="w-6 block mx-auto  py-5" src="img/icons/commentary.svg" alt="Comente">
+		</div>
+		<div class="col col-12 col-sm-6 flex flex-a-center pb-5 pb-md-0">
+			<form  class="w-10 form_index flex flex-j-center flex-a-start flex-dir-col" action="pages/success.html"name="CommentsOCCGS" method="POST"  data-netlify="true">
+				<div class="input_div w-10 flex flex-j-between flex-a-start flex-dir-col">
+					<input type="text" name="name" id="name" required="true" tabindex="1" />
+					<label for="name">Nome</label>
+				</div>
+				<div class="input_div w-10 flex flex-j-between flex-a-start flex-dir-col">
+					<input type="email" name="email" id="email" required="true" tabindex="2" />
+					<label for="email">Email</label>
+				</div>
+			
+				<div class="textarea_div w-10 flex flex-j-between flex-a-start flex-dir-col">
+					<textarea required="true" cols="40" rows="8" name="textarea" id="textarea"></textarea>
+
+					<label for="textarea">Comentário:</label>
+				</div>
+				<div class="w-10 flex flex-j-end flex-a-start">
+					<input class="button" type="submit" value="Enviar Comentário" />
+				</div>
+			</form>
+		</div>
+		<div class="col col-4">
+			<div class="w-10 flex flex-j-center flex-a-center">
+				<button class="button"><a href="pages/download.html">Download</a></button>
+			</div>
+		</div>
+		<div class="col col-4">
+			<div class="w-10 flex flex-j-center flex-a-center">
+				<button class="button simple"><a href="pages/docs.html">Documentação</a></button>
+			</div>
+		</div>
+		<div class="col col-4">
+			<div class="w-10 flex flex-j-center flex-a-center">
+				<button class="button" data-bg="#f05d8a"><a href="pages/components.html">Componentes</a></button>
+			</div>
+		</div>
 	</div>
 </div>
+<footer class="con footer">
+	<div class="row">
+		<div class="col col-12 col-sm-4">
+			<h4 class="text-a-center">Menu</h4>
+			<ul class="menu_footer flex flex-dir-col flex-a-center">
+				<li><a href="index.html">Inicio</a></li>
+				<li><a href="pages/docs.html">Documentação</a></li>
+				<li><a href="">Downloads</a></li>
+				<li><a href="">Comentários</a></li>
+				<li><a href="">Projeto</a></li>
+			</ul>
+		</div>
+		<div class="col col-12 col-sm-4">
+			<img src="img/logo2.gif" alt="" class="block mx-auto w-6">
+			<p class="text-a-center pb-5">Acesse o projeto no <a class="link_github" target="blank_" href="https://github.com/crisrochadev/occ-grid-system"><img class="inline-block ml-1" width="14px" src="img/icons/github.svg" alt="img/icons/github.svg">GitHub</a> e obtenha mais informações !</p>
+		</div>
+		<div class="col col-12 col-sm-4">
+			<h4 class="text-a-center">Redes Sociais</h4>
+			<ul class="flex flex-j-center flex-a-center h-6p mt-2 redes_sociais">
+				<li class="mx-1"><a href=""><img src="img/icons/facebook2.svg" alt=""></a></li>
+				<li class="mx-1"><a href=""><img src="img/icons/instagram.svg" alt=""></a></li>
+				<li class="mx-1"><a href=""><img src="img/icons/linkedin.svg" alt=""></a></li>
+				<li class="mx-1"><a href=""><img src="img/icons/mail.svg" alt=""></a></li>
+			</ul>
+		</div>
+	</div>
+</footer>
 <script src="inc/js/occgs.js"></script>
 <script src="inc/js/feather.js"></script>
 <script>

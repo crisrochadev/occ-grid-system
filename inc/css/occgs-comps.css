@@ -508,6 +508,7 @@ img{
 	border:none;
 	border-radius:3px;
 	background:var(--maincolor);
+	border:1px solid var(--maincolor);
 	padding:10px 20px;
 	text-align:center;
 	font-size:1em;
@@ -546,6 +547,7 @@ img{
 	        transform: scale(0.9,0.9);
 }
 .button.alert{
+	border:1px solid var(--alertcolor);
 	background: var(--alertcolor)!important;
 	color:var(--maincolor) !important;
 }
@@ -553,10 +555,12 @@ img{
 	color:var(--maincolor) !important;
 }
 .button.danger{
+	border:1px solid var(--dangercolor);
 	background: var(--dangercolor)!important;
 }
 .button.success{
-	background: var(--successcolor)!important;;
+	background: var(--successcolor)!important;
+	border:1px solid var(--successcolor);
 }
 .button.simple{
 	border:1px solid var(--maincolor) !important;

@@ -175,7 +175,7 @@ const occgridsystem = (set) =>{
 		addStylesheet(initalRoot.linkPrimaryFont,initalRoot.linkSecondaryFont,initalRoot.linkMainFont)
 }
 
-
+const currentLocation = location.href
 /* ------------ Data Values ---------------- */
 const data_bg = document.querySelectorAll('[data-bg]')
 data_bg.forEach(data => {
@@ -216,7 +216,7 @@ if(nav_1 && nav_1 != undefined){
 	
 
 	// Menu Active
-	const currentLocation = location.href
+	
 	const menuItem = document.querySelectorAll('.occ-navbar-1 .menu li')
 	const menuLink = document.querySelectorAll('.occ-navbar-1 .menu li a')
 		for(let i=0;i<menuLink.length;i++){
@@ -225,4 +225,12 @@ if(nav_1 && nav_1 != undefined){
 			}
 		}
 
+}
+const linkFooter = document.querySelectorAll('.menu_footer li a')
+if(linkFooter && linkFooter != undefined){
+	for(let i=0;i<linkFooter.length;i++){
+			if(linkFooter[i].href === currentLocation){
+						linkFooter[i].className = 'active-footer'
+			}
+		}
 }
