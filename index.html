@@ -3,14 +3,9 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="inc/css/occgs.css">
-	<link rel="stylesheet" href="inc/css/occgs-comps.css">
-	<link rel="stylesheet" href="inc/css/mobile_up.css">
-	<link rel="stylesheet" href="inc/css/tablet.css">
-	<link rel="stylesheet" href="inc/css/descktop.css">
-	<link rel="stylesheet" href="inc/css/desktop_up.css">
-	<link rel="stylesheet" href="inc/css/">
-		<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="inc/css/occgs.min.css">
+	<link rel="stylesheet" href="inc/css/occgs-comps.min.css">
+	<link rel="stylesheet" href="style.css">
 
 	<title>OCC Grid System</title>
 </head>
@@ -288,37 +283,38 @@
 			<img class="w-6 block mx-auto  py-5" src="img/icons/commentary.svg" alt="Comente">
 		</div>
 		<div class="col col-12 col-sm-6 flex flex-a-center pb-5 pb-md-0">
-			<form  class="w-10 form_index flex flex-j-center flex-a-start flex-dir-col"  name="CommentsOCCGS" method="POST"  data-netlify="true">
+			<form  class="w-10 form_index flex flex-j-center flex-a-start flex-dir-col" name="CommentsOCCGS" method="POST" data-netlify="true"  netlify-honeypot="bot-field" data-netlify-recaptcha="true">
 				<div class="input_div w-10 flex flex-j-between flex-a-start flex-dir-col">
-					<input type="text" name="name" id="name" required="true" tabindex="1" />
+					<input id="name_form" type="text" name="name" id="name" required="true" tabindex="1" />
 					<label for="name">Nome</label>
 				</div>
 				<div class="input_div w-10 flex flex-j-between flex-a-start flex-dir-col">
-					<input type="email" name="email" id="email" required="true" tabindex="2" />
+					<input id="email_form" type="email" name="email" id="email" required="true" tabindex="2" />
 					<label for="email">Email</label>
 				</div>
 			
 				<div class="textarea_div w-10 flex flex-j-between flex-a-start flex-dir-col">
-					<textarea required="true" cols="40" rows="8" name="textarea" id="textarea"></textarea>
+					<textarea id="comment_form" required="true" cols="40" rows="8" name="textarea" id="textarea"></textarea>
 
 					<label for="textarea">Comentário:</label>
 				</div>
+				<div data-netlify-recaptcha="true"></div>
 				<div class="w-10 flex flex-j-end flex-a-start">
-					<input class="button" type="submit" value="Enviar Comentário" />
+					<input class="button" id="send_form" type="submit" value="Enviar Comentário" />
 				</div>
 			</form>
 		</div>
-		<div class="col col-4">
+		<div class="col col-12 col-sm-4">
 			<div class="w-10 flex flex-j-center flex-a-center">
 				<button class="button"><a href="pages/download.html">Download</a></button>
 			</div>
 		</div>
-		<div class="col col-4">
+		<div class="col col-12 col-sm-4">
 			<div class="w-10 flex flex-j-center flex-a-center">
 				<button class="button simple"><a href="pages/docs.html">Documentação</a></button>
 			</div>
 		</div>
-		<div class="col col-4">
+		<div class="col col-12 col-sm-4">
 			<div class="w-10 flex flex-j-center flex-a-center">
 				<button class="button" data-bg="#f05d8a"><a href="pages/components.html">Componentes</a></button>
 			</div>
@@ -330,11 +326,10 @@
 		<div class="col col-12 col-sm-4">
 			<h4 class="text-a-center">Menu</h4>
 			<ul class="menu_footer flex flex-dir-col flex-a-center">
-				<li><a href="index.html">Inicio</a></li>
+				<li><a href="/index.html">Inicio</a></li>
 				<li><a href="pages/docs.html">Documentação</a></li>
-				<li><a href="">Downloads</a></li>
-				<li><a href="">Comentários</a></li>
-				<li><a href="">Projeto</a></li>
+				<li><a href="pages/download.html">Downloads</a></li>
+				<li><a traget="blank_" href="https://github.com/crisrochadev/occ-grid-system">Projeto</a></li>
 			</ul>
 		</div>
 		<div class="col col-12 col-sm-4">
@@ -344,16 +339,17 @@
 		<div class="col col-12 col-sm-4">
 			<h4 class="text-a-center">Redes Sociais</h4>
 			<ul class="flex flex-j-center flex-a-center h-6p mt-2 redes_sociais">
-				<li class="mx-1"><a href=""><img src="img/icons/facebook2.svg" alt=""></a></li>
-				<li class="mx-1"><a href=""><img src="img/icons/instagram.svg" alt=""></a></li>
-				<li class="mx-1"><a href=""><img src="img/icons/linkedin.svg" alt=""></a></li>
-				<li class="mx-1"><a href=""><img src="img/icons/mail.svg" alt=""></a></li>
+				<li class="mx-1"><a target="blank_" href="https://facebook.com/ocodigocris"><img src="img/icons/facebook2.svg" alt=""></a></li>
+				<li class="mx-1"><a target="blank_" href="https://instagram.com/ocodigocris"><img src="img/icons/instagram.svg" alt=""></a></li>
+				<li class="mx-1"><a target="blank_" href="https://www.linkedin.com/in/crisrochadev/"><img src="img/icons/linkedin.svg" alt=""></a></li>
+				<li class="mx-1"><a target="blank_" href="crisrocha.dev@gmail.com"><img src="img/icons/mail.svg" alt=""></a></li>
 			</ul>
 		</div>
 	</div>
 </footer>
 <script src="inc/js/occgs.js"></script>
 <script src="inc/js/feather.js"></script>
+<script src="inc/js/comments.js"></script>
 <script>
 	occgridsystem({
 		rootStyles:{

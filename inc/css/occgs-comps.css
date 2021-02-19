@@ -594,3 +594,97 @@ img{
 .button.simple.success a{
 	color: var(--successcolor) !important;
 }
+/*-------------Mobile UP [sm]--------------*/
+@media (min-width:600px){
+body{
+    font-size: calc(var(--fonttextsize) + 2px)
+}
+h1{
+    font-size:calc(var(--fonth1size) + 2px);
+}
+h2{
+    font-size:calc(var(--fonth2size) + 2px);
+}
+h3{
+    font-size:calc(var(--fonth3size) + 2px);
+}
+h4{
+    font-size:calc(var(--fonth4size) + 2px);
+}
+h5{
+    font-size:calc(var(--fonth5size) + 2px);
+}
+h6{
+    font-size:calc(var(--fonth6size) + 2px);
+}
+}
+@media (min-width:900px){
+    body{
+        font-size: calc(var(--fonttextsize) + 4px);
+    }
+	h1{
+        font-size:calc(var(--fonth1size) + 4px);
+    }
+    h2{
+        font-size:calc(var(--fonth2size) + 4px);
+    }
+    h3{
+        font-size:calc(var(--fonth3size) + 4px);
+    }
+    h4{
+        font-size:calc(var(--fonth4size) + 4px);
+    }
+    h5{
+        font-size:calc(var(--fonth5size) + 4px);
+    }
+    h6{
+        font-size:calc(var(--fonth6size) + 4px);
+    }
+
+}
+@media (min-width:1200px){
+body{
+    font-size: calc(var(--fonttextsize) + 6px)
+}
+h1{
+    font-size:calc(var(--fonth1size) + 6px);
+}
+h2{
+    font-size:calc(var(--fonth2size) + 6px);
+}
+h3{
+    font-size:calc(var(--fonth3size) + 6px);
+}
+h4{
+    font-size:calc(var(--fonth4size) + 6px);
+}
+h5{
+    font-size:calc(var(--fonth5size) + 6px);
+}
+h6{
+    font-size:calc(var(--fonth6size) + 6px);
+}
+}
+@media (min-width:1800px){
+body{
+    font-size: calc(var(--fonttextsize) + 8px)
+}
+h1{
+    font-size:calc(var(--fonth1size) + 8px);
+}
+h2{
+    font-size:calc(var(--fonth2size) + 8px);
+}
+h3{
+    font-size:calc(var(--fonth3size) + 8px);
+}
+h4{
+    font-size:calc(var(--fonth4size) + 8px);
+}
+h5{
+    font-size:calc(var(--fonth5size) + 8px);
+}
+h6{
+    font-size:calc(var(--fonth6size) + 8px);
+}
+}

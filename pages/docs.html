@@ -3,23 +3,17 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="../inc/css/occgs.css">
+	<link rel="stylesheet" href="../inc/css/occgs.min.css">
+	<link rel="stylesheet" href="../inc/css/occgs-comps.min.css">
 	<link rel="stylesheet" href="../style.css">
-	<link rel="stylesheet" href="../inc/css/mobile_up.css">
-	<link rel="stylesheet" href="../inc/css/tablet.css">
-	<link rel="stylesheet" href="../inc/css/descktop.css">
-	<link rel="stylesheet" href="../inc/css/desktop_up.css">
-	<link rel="stylesheet" href="../inc/css/occgs-comps.css">
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-	<title>OCC Grid System</title>
+	<title>Documentação -  OCC Grid System</title>
 </head>
 <body>
-<header>
-	<div class="navbar-reponsive occ-navbar-1 con" data-bg="#fff">
+	<header>
+	<div class="navbar-reponsive occ-navbar-1 con fixed" data-bg="#fff">
 		<div class="brand-1">
 			<img src="../img/logo.gif" alt="OCC Grid System">
-			<h1>OCC Grid System</h1>
+			<h1 class="none block-md">OCC Grid System</h1>
 		</div>
 		<div class="menu_search">
 			<div class="menu-toggle-1 order-2">
@@ -29,23 +23,39 @@
 				<li><a href="/index.html">Inicio</a></li>
 				<li class="with-children">Documentação
 					<ul class="sub-menu">
-						<li><a href="pages/docs.html#start">Começando</a></li>
-						<li><a href="pages/docs.html#aditionals">Adcionais</a></li>
-						<li><a href="pages/docs.html#components">Componentes</a></li>
+						<li><a href="#start">Começando</a></li>
+						<li><a href="#aditionals">Adcionais</a></li>
+						<li><a href="#components">Componentes</a></li>
 					</ul>
 				</li>
-				
 			</ul>
+			<div class="mx-2"></div>
+			<button class="button">
+				<a href="download.html">Download</a>
+			</button>
+			
 		</div>
 	</div>
+	<div class="row pt-5"></div>
 </header>
-<div class="con">
-	<div class="row">
-		<div class="col col-12">
-			Conteudo
+	<div class="con">
+		<div class="row">
+			<h1 class="text-a-center">Em Desenvolvimento</h1>
 		</div>
 	</div>
-</div>
-<script src="../inc/js/occgs.js"></script>
+	<script src="../inc/js/occgs.js"></script>
+<script>
+	occgridsystem({
+		rootStyles:{
+			mainColor:"#744247",
+			primaryColor:"#f05d8a",
+			secondaryColor:"#F3D2DA",
+			linkMainFont:'https://fonts.googleapis.com/css2?family=Ballet&display=swap',
+			linkPrimaryFont:'https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap',
+			bgLightColor:"#fff",
+		}
+	})
+	
+</script>
 </body>
 </html>
