@@ -346,3 +346,9 @@ h5{
 	padding-top:50px;
 	box-shadow: 0 -4px 8px var(--boxshadowcolor);
 }
+.link_css ul li code{
+	color:var(--textcolor);
+}
+.down_css{
+	height:400px;
+}
